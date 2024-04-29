@@ -1,6 +1,13 @@
 const Questions = {
   ADDS: [
-    {q: "What is ADDS?", a: "Active Directory Domain Services", tag: 0},
+    {q: "What is Azure Resource Manager temolate? How does it work?", a: "", tag: 0},
+    {q: "Whay i virtual machine scale set?<br>How to configure it?", a: "", tag: 0},
+    {q: "", a: "", tag: 0},
+    {q: "", a: "", tag: 0},
+    {q: "", a: "", tag: 0},
+    {q: "", a: "", tag: 0},
+    {q: "", a: "", tag: 0},
+    {q: "", a: "", tag: 0},
     {q: "", a: "", tag: 0},
   ]
 };
