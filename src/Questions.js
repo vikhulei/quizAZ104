@@ -1,5 +1,5 @@
 const Questions = {
-  ADDS: [
+  IdentitiesGovernance: [
     { q: "	Three types of user accounts	", a: "	1) Cloud<br>2) Directory synchronized<br>3) Guest user	", tag: 0 },
     { q: "	Two templates to create cloud user	", a: "	1) Create user<br>2) Invite user	", tag: 0 },
     { q: "	Who can preset data for the cloud user?	", a: "	Global administrator or User administrator	", tag: 0 },
