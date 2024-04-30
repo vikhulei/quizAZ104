@@ -1,14 +1,6 @@
 const Questions = {
   ADDS: [
-    {q: "What is Azure Resource Manager temolate? How does it work?", a: "", tag: 0},
-    {q: "Whay i virtual machine scale set?<br>How to configure it?", a: "", tag: 0},
-    {q: "", a: "", tag: 0},
-    {q: "", a: "", tag: 0},
-    {q: "", a: "", tag: 0},
-    {q: "", a: "", tag: 0},
-    {q: "", a: "", tag: 0},
-    {q: "", a: "", tag: 0},
-    {q: "", a: "", tag: 0},
+    {q: "	Three types of user accounts	", a: "	1) Cloud<br>2) Directory synchronized<br>3) Guest user	", tag: 0},
   ]
 };
 
