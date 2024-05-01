@@ -53,8 +53,8 @@ const App = () => {
     <div className="wrapper">
       <div className="top_bar">
         <select name="category" id="category" onChange={click_category}>
-          <option value='IdentitiesGovernance'>Identities & Governance</option>
-          <option value='UserGroupAccounts'>User & Group Accounts</option>
+          <option value='EntraID'>Entra ID</option>
+          <option value='Subscriptions'>Subscriptions</option>
         </select>
         <div className="repeat">
           <label>R</label>
