@@ -55,6 +55,7 @@ const App = () => {
         <select name="category" id="category" onChange={click_category}>
           <option value='EntraID'>Entra ID</option>
           <option value='Subscriptions'>Subscriptions</option>
+          <option value='AzurePolicy'>Azure Policy</option>
         </select>
         <div className="repeat">
           <label>R</label>

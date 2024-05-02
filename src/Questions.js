@@ -26,6 +26,17 @@ const Questions = {
     { q: "	Explain Reservations as cost saving option. How much can you save?	", a: "	Reservation is saving money by paying ahead. Can save up to 72%	", tag: 0 },
     { q: "	What is Azure Credit?<br>How can you save with Azure regions?<br>What can you use to provide estimates for all areas, including compute, networking, storage, web?	", a: "	Use the monthly credit benefit to develop, test, and experiment with new solutions on Azure<br>Pricing can vary from one region to another<br>Pricing calculator	", tag: 0 },
   ],
+  AzurePolicy: [
+    { q: "	What is management group?<br>How deep is the management group tree?	", a: "	It is a container to manage access, policy, and compliance across the subscriptions.<br>A management group tree can support up to six levels of depth	", tag: 0 },
+    { q: "	What is used to create management groups?<br>Which two properties are set when creating management group?	", a: "	 Azure portal, PowerShell, or the Azure CLI with the Azure Policy<br>Management group ID and management group display name	", tag: 0 },
+    { q: "	What is Azure Policy?	", a: "	Azure Policy is a service in Azure that you can use to create, assign, and manage policies. You can use policies to enforce rules on your resources to meet corporate compliance standards	", tag: 0 },
+    { q: "	Four things Azure policies can be used for	", a: "	Deployable resources (specify the set of virtual machine SKUs)<br>Location restrictions<br>Rules enforcement (enforce a required tag on resources)<br>Inventory audits (use Azure Backup service and run inventory audits)	", tag: 0 },
+    { q: "	4 steps to create Azure policy	", a: "	Step 1: Create policy definitions; Step 2: Create an initiative definition; Step 3: Scope the initiative definition; Step 4: Determine compliance	", tag: 0 },
+    { q: "	Two examples of built-in policy definitions	", a: "	Allowed virtual machine size SKUs: Specify a set of VM size SKUs (compute cat.)<br>Allowed locations: Restrict the locations (General cat.)	", tag: 0 },
+    { q: "	Two examples of built-in initiative definitions	", a: "	Audit machines with insecure password security settings (Guest configuration cat.)<br>Configure Azure Defender to be enabled on SQL servers (SQL cat.)	", tag: 0 },
+    { q: "	Which two option have to be selected when determining the initiative definition scope?	", a: "	1) Subscription 2) Resource group	", tag: 0 },
+    { q: "	What do we use Compliance feature for?	", a: "	We use the Compliance feature to look for non-compliant initiatives, policies, and resources	", tag: 0 },
+  ],
 };
 
 export default Questions;
