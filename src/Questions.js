@@ -37,6 +37,16 @@ const Questions = {
     { q: "	Which two option have to be selected when determining the initiative definition scope?	", a: "	1) Subscription 2) Resource group	", tag: 0 },
     { q: "	What do we use Compliance feature for?	", a: "	We use the Compliance feature to look for non-compliant initiatives, policies, and resources	", tag: 0 },
   ],
+  RBAC: [
+    {q: "	What is the definition and examples of security principals?<br>What are some built-in role definitions?How many of them are there?	", a: "	Object that requests access to resources. E.g. - user, group, service principal, managed identity<br>Some built-in role definitions: Reader, Contributor, Owner, User Access Administrator. Over 100 roles	", tag: 0},
+    {q: "	What is an example of a role assignment?<br>What is the definition and examples of the scopes?	", a: "	Assign the User Access Administrator role to an admin group scoped to a management group<br>Boundary where the access is granted - management group, subscription, resource group, resource	", tag: 0},
+    {q: "	Four sets of RBAC permissions in JSON file<br>What is the highest built-in role?	", a: "	Actions, NotActions, DataActions (how data can be changed or used), AssignableScopes<br>Owner	", tag: 0},
+    {q: "	What is Actions permission for Reader role?<br>What is NotActions permission for Contributor?	", a: "	/*/read<br>- Microsoft.Authorization/*/Delete, - Microsoft.Authorization/*/Write	", tag: 0},
+    {q: "	Which two parts are composing effective permissions?	", a: "	Permissions for the requestor's roles + permissions for the role asigned to the resource	", tag: 0},
+    {q: "	Azure RBAC roles vs Microsoft Entra admin roles	", a: "	Entra admin roles are used to manage resources in Microsoft Entra ID, such as users, groups, and domains<br>Azure RBAC roles provide more granular access management for Azure resources	", tag: 0},
+    {q: "	Describe the roles of Owner, Contributor, Reader and User Access Administrator	", a: "	Owner - full access<br>Contributor - can create, cannot delete/modify, cannot grant access to others<br>Reader - can view existing resources<br>User Access - can manage user access to resources	", tag: 0},
+  ],
+
 };
 
 export default Questions;

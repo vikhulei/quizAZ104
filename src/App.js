@@ -56,6 +56,7 @@ const App = () => {
           <option value='EntraID'>Entra ID</option>
           <option value='Subscriptions'>Subscriptions</option>
           <option value='AzurePolicy'>Azure Policy</option>
+          <option value='RBAC'>RBAC</option>
         </select>
         <div className="repeat">
           <label>R</label>
