@@ -22,7 +22,7 @@ const Questions = {
     { q: "	Four ways to obtain Azure subscription	", a: "	Enterprise agreement<br>Microsoft reseller<br>Microsoft partner<br>Personal free account	", tag: 0 },
     { q: "	Four most popular types of Azure subscription	", a: "	Free, Pay-As-You-Go, Enterprise Agreement, and Student	", tag: 0 },
     { q: "	Explain Microsoft Cost Management analysis	", a: "	Microsoft Cost Management cost analysis features explores and analyses your organizational costs. You can monitor accumulated costs over time to estimate monthly, quarterly, or even yearly cost trends against a budget	", tag: 0 },
-    { q: "	What are tags used for? What are two parts of a tag? What is the maximum number of tags per resource?		Tags are useful for sorting, searching, managing, and doing analysis on your resources.<br>Name/value pair<br>50	", tag: 0 },
+    { q: "	What are tags used for? What are two parts of a tag? What is the maximum number of tags per resource?",	a:	"Tags are useful for sorting, searching, managing, and doing analysis on your resources.<br>Name/value pair<br>50	", tag: 0 },
     { q: "	Explain Reservations as cost saving option. How much can you save?	", a: "	Reservation is saving money by paying ahead. Can save up to 72%	", tag: 0 },
     { q: "	What is Azure Credit?<br>How can you save with Azure regions?<br>What can you use to provide estimates for all areas, including compute, networking, storage, web?	", a: "	Use the monthly credit benefit to develop, test, and experiment with new solutions on Azure<br>Pricing can vary from one region to another<br>Pricing calculator	", tag: 0 },
   ],
