@@ -54,6 +54,7 @@ const App = () => {
       <div className="top_bar">
         <select name="category" id="category" onChange={click_category}>
           <option value='EntraID'>Entra ID</option>
+          <option value='UsersAndGroups'>Users & Groups</option>
           <option value='Subscriptions'>Subscriptions</option>
           <option value='AzurePolicy'>Azure Policy</option>
           <option value='RBAC'>RBAC</option>
