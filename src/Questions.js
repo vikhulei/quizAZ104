@@ -51,6 +51,15 @@ const Questions = {
     { q: "	Azure RBAC roles vs Microsoft Entra admin roles	", a: "	Entra admin roles are used to manage resources in Microsoft Entra ID, such as users, groups, and domains<br>Azure RBAC roles provide more granular access management for Azure resources	", tag: 0 },
     { q: "	Describe the roles of Owner, Contributor, Reader and User Access Administrator	", a: "	Owner - full access<br>Contributor - can create, cannot delete/modify, cannot grant access to others<br>Reader - can view existing resources<br>User Access - can manage user access to resources	", tag: 0 },
   ],
+  ToolsAndRM: [
+    { q: "	What three things are required to Azure Cloude Shelll?<br>Name of the editor in Azure Cloud Shell?<br>How many min before it turns off?	", a: "	Azure File share, resource group and storage account<br>Monaco Editor<br>20 min	", tag: 0 },
+    { q: "	What is Azure PowerShell?	", a: "	Azure PowerShell is a module that you add to Windows PowerShell or PowerShell Core to enable you to connect to your Azure subscription and manage resources	", tag: 0 },
+    { q: "	What is Azure CLI?<br> What do you use to find the command you need?	", a: "	Azure CLI is a command-line program to connect to Azure and execute administrative commands on Azure resources.<br> 1) find: az find blob 2) --help: az storage blob --help	", tag: 0 },
+    { q: "	Can the same resource exist in multiple resource groups?<br>Can you rename a resource group?<br>CAn you have resources from several regions in 1 group?	", a: "	No<br>No<br>Yes	", tag: 0 },
+    { q: "	What are two types of resource locks?<br>Who can create or delete management locks?	", a: "	Read-only lock and Delete lock<br>Owner or User Access Administrator	", tag: 0 },
+    { q: "	Two limitations for moving resource groups	", a: "	1) You can't move child group without moiving parent group<br>2) Usually you need to move depended resources - in case of moving the network, you also need to move gateways	", tag: 0 },
+    { q: "	What do you do if you need to increase a default limit for your resource?	", a: "	There is a Request Increase link	", tag: 0 },
+  ],
 
 };
 

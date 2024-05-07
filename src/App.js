@@ -58,6 +58,7 @@ const App = () => {
           <option value='Subscriptions'>Subscriptions</option>
           <option value='AzurePolicy'>Azure Policy</option>
           <option value='RBAC'>RBAC</option>
+          <option value='ToolsAndRM'>Tools And Res Mng</option>
         </select>
         <div className="repeat">
           <label>R</label>
