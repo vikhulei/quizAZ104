@@ -59,6 +59,7 @@ const Questions = {
     { q: "	What are two types of resource locks?<br>Who can create or delete management locks?	", a: "	Read-only lock and Delete lock<br>Owner or User Access Administrator	", tag: 0 },
     { q: "	Two limitations for moving resource groups	", a: "	1) You can't move child group without moiving parent group<br>2) Usually you need to move depended resources - in case of moving the network, you also need to move gateways	", tag: 0 },
     { q: "	What do you do if you need to increase a default limit for your resource?	", a: "	There is a Request Increase link	", tag: 0 },
+    {q: "	What is Azure Bicep?	", a: "	Azure Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources	", tag: 0},
   ],
 
 };
