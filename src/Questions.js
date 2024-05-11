@@ -1,4 +1,7 @@
 const Questions = {
+  Exam: [
+    {q: "	Which option can you use to manage governance across multiple Azure subscriptions?	", a: "	Management groups facilitate the hierarchical ordering of Azure resources into collections, at a level of scope above subscriptions	", tag: 0},
+  ],
   EntraID: [
     { q: "Three types of user accounts", a: "1) Cloud<br>2) Directory synchronized<br>3) Guest user", tag: 0 },
     { q: "Three templates to create cloud user", a: "1) Create user<br>2) Invite user<br>3) Create B2C user", tag: 0 },
@@ -60,6 +63,22 @@ const Questions = {
     { q: "	Two limitations for moving resource groups	", a: "	1) You can't move child group without moiving parent group<br>2) Usually you need to move depended resources - in case of moving the network, you also need to move gateways	", tag: 0 },
     { q: "	What do you do if you need to increase a default limit for your resource?	", a: "	There is a Request Increase link	", tag: 0 },
     {q: "	What is Azure Bicep?	", a: "	Azure Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources	", tag: 0},
+  ],
+  NSG: [
+    {q: "	What are the 5 reserved ip addresses of the subnet 192.168.10.0/24?	", a: "	192.168.10.0 - address of the network<br>192.168.10.1 - default gateway<br>192.168.10.2 and 192.168.10.3 - Azure DNS<br>192.168.10.255 - broadcast address	", tag: 0},
+    {q: "	Do you need to define at least one subnet for each Virtual Network?	", a: "	Yes	", tag: 0},
+    {q: "	How many NSG can be associated with a network or NIC?<br>How many NICs can be associated with a single security group?	", a: "	A network security group can be associated to multiple network interfaces and subnets, but each network interface or subnet can be associated to only one network security group	", tag: 0},
+    {q: "	Which 5 settings are defined for a security group?	", a: "	5-tuple: protocol, source IP address range, source port range, destination IP address range, and destination port range	", tag: 0},
+    {q: "	In which order the NSGs are applied for inbound traffic?<br>For outbound traffic?	", a: "	Inbound - subnets first (has precedence), then network interfaces<br>Outbound - NSG applied to NIC has precedence, then NSG associated with subnets are applied	", tag: 0},
+    {q: "	What is a good practice for security rules priority numbering?	", a: "	It is to leave gaps with numbering such as 100, 200, 300 and so on - this will allow to add new rules in between	", tag: 0},
+    {q: "	Which rule takes precedence - priority 150 or priority 200?<br>Is traffic denied or allowed by default?	", a: "	150<br>Denied by default	", tag: 0},
+  ],
+  DNS: [
+    {q: "	What is the initial domain name, created by Azure by default?<br>When is it created?	", a: "	yourdomainname.onmicrosoft.com<br>When you create an Azure subscription, Azure automatically creates a Microsoft Entra domain for your subscription	", tag: 0},
+    {q: "	User with what role can perform domain management tasks?<br>Which user has this role?	", a: "	You must be a global administrator to perform domain management tasks.<br>The global administrator is the user who created the subscription.	", tag: 0},
+    {q: "	How to verify your custom domain name?	", a: "	By adding MX or TXT DNS record for your custom domain name	", tag: 0},
+    {q: "	Explain 9 DNS records: (ip, canonic name, secondary, server, service)	", a: "	A - IPv4 to name; AAAA - IPv6 to name; CNAME - name to name;  SOA (Start of Authority) - to  secondary name servers; NS (Name Server) - authoritative name servers; MX - mail servers;  TXT - notes for verification;  SRV - services directed to separate host;  PTR - a reverse of A and AAAA	IPv4", tag: 0},
+
   ],
 
 };
