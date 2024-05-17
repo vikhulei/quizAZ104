@@ -1,6 +1,6 @@
 const Questions = {
   Exam: [
-    {q: "	Which option can you use to manage governance across multiple Azure subscriptions?	", a: "	Management groups facilitate the hierarchical ordering of Azure resources into collections, at a level of scope above subscriptions	", tag: 0},
+    { q: "	Which option can you use to manage governance across multiple Azure subscriptions?	", a: "	Management groups facilitate the hierarchical ordering of Azure resources into collections, at a level of scope above subscriptions	", tag: 0 },
   ],
   EntraID: [
     { q: "Three types of user accounts", a: "1) Cloud<br>2) Directory synchronized<br>3) Guest user", tag: 0 },
@@ -62,23 +62,45 @@ const Questions = {
     { q: "	What are two types of resource locks?<br>Who can create or delete management locks?	", a: "	Read-only lock and Delete lock<br>Owner or User Access Administrator	", tag: 0 },
     { q: "	Two limitations for moving resource groups	", a: "	1) You can't move child group without moiving parent group<br>2) Usually you need to move depended resources - in case of moving the network, you also need to move gateways	", tag: 0 },
     { q: "	What do you do if you need to increase a default limit for your resource?	", a: "	There is a Request Increase link	", tag: 0 },
-    {q: "	What is Azure Bicep?	", a: "	Azure Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources	", tag: 0},
+    { q: "	What is Azure Bicep?	", a: "	Azure Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources	", tag: 0 },
   ],
   NSG: [
-    {q: "	What are the 5 reserved ip addresses of the subnet 192.168.10.0/24?	", a: "	192.168.10.0 - address of the network<br>192.168.10.1 - default gateway<br>192.168.10.2 and 192.168.10.3 - Azure DNS<br>192.168.10.255 - broadcast address	", tag: 0},
-    {q: "	Do you need to define at least one subnet for each Virtual Network?	", a: "	Yes	", tag: 0},
-    {q: "	How many NSG can be associated with a network or NIC?<br>How many NICs can be associated with a single security group?	", a: "	A network security group can be associated to multiple network interfaces and subnets, but each network interface or subnet can be associated to only one network security group	", tag: 0},
-    {q: "	Which 5 settings are defined for a security group?	", a: "	5-tuple: protocol, source IP address range, source port range, destination IP address range, and destination port range	", tag: 0},
-    {q: "	In which order the NSGs are applied for inbound traffic?<br>For outbound traffic?	", a: "	Inbound - subnets first (has precedence), then network interfaces<br>Outbound - NSG applied to NIC has precedence, then NSG associated with subnets are applied	", tag: 0},
-    {q: "	What is a good practice for security rules priority numbering?	", a: "	It is to leave gaps with numbering such as 100, 200, 300 and so on - this will allow to add new rules in between	", tag: 0},
-    {q: "	Which rule takes precedence - priority 150 or priority 200?<br>Is traffic denied or allowed by default?	", a: "	150<br>Denied by default	", tag: 0},
+    { q: "	What are the 5 reserved ip addresses of the subnet 192.168.10.0/24?	", a: "	192.168.10.0 - address of the network<br>192.168.10.1 - default gateway<br>192.168.10.2 and 192.168.10.3 - Azure DNS<br>192.168.10.255 - broadcast address	", tag: 0 },
+    { q: "	Do you need to define at least one subnet for each Virtual Network?	", a: "	Yes	", tag: 0 },
+    { q: "	How many NSG can be associated with a network or NIC?<br>How many NICs can be associated with a single security group?	", a: "	A network security group can be associated to multiple network interfaces and subnets, but each network interface or subnet can be associated to only one network security group	", tag: 0 },
+    { q: "	Which 5 settings are defined for a security group?	", a: "	5-tuple: protocol, source IP address range, source port range, destination IP address range, and destination port range	", tag: 0 },
+    { q: "	In which order the NSGs are applied for inbound traffic?<br>For outbound traffic?	", a: "	Inbound - subnets first (has precedence), then network interfaces<br>Outbound - NSG applied to NIC has precedence, then NSG associated with subnets are applied	", tag: 0 },
+    { q: "	What is a good practice for security rules priority numbering?	", a: "	It is to leave gaps with numbering such as 100, 200, 300 and so on - this will allow to add new rules in between	", tag: 0 },
+    { q: "	Which rule takes precedence - priority 150 or priority 200?<br>Is traffic denied or allowed by default?	", a: "	150<br>Denied by default	", tag: 0 },
   ],
   DNS: [
-    {q: "	What is the initial domain name, created by Azure by default?<br>When is it created?	", a: "	yourdomainname.onmicrosoft.com<br>When you create an Azure subscription, Azure automatically creates a Microsoft Entra domain for your subscription	", tag: 0},
-    {q: "	User with what role can perform domain management tasks?<br>Which user has this role?	", a: "	You must be a global administrator to perform domain management tasks.<br>The global administrator is the user who created the subscription.	", tag: 0},
-    {q: "	How to verify your custom domain name?	", a: "	By adding MX or TXT DNS record for your custom domain name	", tag: 0},
-    {q: "	Explain 9 DNS records: (ip, canonic name, secondary, server, service)	", a: "	A - IPv4 to name; AAAA - IPv6 to name; CNAME - name to name;  SOA (Start of Authority) - to  secondary name servers; NS (Name Server) - authoritative name servers; MX - mail servers;  TXT - notes for verification;  SRV - services directed to separate host;  PTR - a reverse of A and AAAA	IPv4", tag: 0},
-
+    { q: "	What is the initial domain name, created by Azure by default?<br>When is it created?	", a: "	yourdomainname.onmicrosoft.com<br>When you create an Azure subscription, Azure automatically creates a Microsoft Entra domain for your subscription	", tag: 0 },
+    { q: "	User with what role can perform domain management tasks?<br>Which user has this role?	", a: "	You must be a global administrator to perform domain management tasks.<br>The global administrator is the user who created the subscription.	", tag: 0 },
+    { q: "	How to verify your custom domain name?	", a: "	By adding MX or TXT DNS record for your custom domain name	", tag: 0 },
+    { q: "	Explain 9 DNS records: (ip, canonic name, secondary, server, service)	", a: "	A - IPv4 to name; AAAA - IPv6 to name; CNAME - name to name;  SOA (Start of Authority) - to  secondary name servers; NS (Name Server) - authoritative name servers; MX - mail servers;  TXT - notes for verification;  SRV - services directed to separate host;  PTR - a reverse of A and AAAA	IPv4", tag: 0 },
+  ],
+  TheRest1: [
+    { q: "	What is Azure DNS zone?<br>What must be specified to create a DNS zone?	", a: "	An Azure DNS zone hosts the DNS records for a domain<br>In the portal, you specify the DNS zone name, number of records, resource group, zone location, associated subscription, and DNS name servers	", tag: 0 },
+    { q: "	Can multiple DNS zones have the same name?	", a: "	Multiple DNS zones can have the same name, but the DNS zones must exist in different resource groups or in different Azure subscriptions.	", tag: 0 },
+    {
+      q: "	Three steps to delegate DNS domain on the registrar	", a: "Go to your registrars DNS management page.<br>Find the existing NS records for your parent domain.<br> Replace the existing NS records with the NS records created for your domain by Azure DNS.", tag: 0
+    },
+    { q: "	Three steps to delegate subdomain for the domain in Azure	", a: "	Go to the parent DNS zone for your domain in the Azure portal.<br>Find the existing NS records for your parent domain.<br>Create new NS records for your child DNS zone (subdomain).	", tag: 0 },
+    { q: "	Which two things must be identical in DNS record set?	", a: "	Same name and same record type	", tag: 0 },
+    { q: "	What is Azure Private DNS zones?	", a: "	The records contained in a private DNS zone aren't resolvable from the Internet. DNS resolution against a private DNS zone works only from virtual networks that are linked to it.	", tag: 0 },
+    { q: "	Four components for a load balancer	", a: "	To implement a load balancer, you configure four components:<br>Front-end IP configuration<br>Back-end pools<br>Health probes<br>Load-balancing rules	", tag: 0 },
+    { q: "	Three Azure Load Balancer SKUs	", a: "	The Standard SKU offers an expanded and more granular feature set than the Basic SKU: +https, multiple inbound, availability zones, closed by default, 1000 pools<br>The Gateway SKU works with third-party network virtual appliances.	", tag: 0 },
+    { q: "	What is load balancer back-end pool?	", a: "	The back-end pools contain the IP addresses of the virtual NICs that are connected to your load balancer	", tag: 0 },
+    { q: "	How does HTTP probe work on a load balancer?<br>How does a TCP probe work?	", a: "	HTTP probe - 200 message response every 15 sec<br>TCP probe - if the listenere exists to establish TCP session	", tag: 0 },
+    { q: "	What is the difference between Application Gateway and Azure Load Balancer?	", a: "	Application Gateway can target endpoints in other Azure regions and outside Azure, unlke Lloade Balancer, whcih works with VMs in the same virtual network	", tag: 0 },
+    { q: "	Blob Storage uses three resources to store and manage your data:	", a: "	An Azure storage account <br>Containers in an Azure storage account<br>Blobs in a container	", tag: 0 },
+    { q: "	Public access tiers	", a: "	Hot - frequent reads;<br>Cool - large amounts infriquently accessed, remains for at least 30 days;<br>Cold - remains for at least 90 days;<br>Archive - one that can tolerate several hours of retrieval latency	", tag: 0 },
+    { q: "	What should be enabled for blob replication?<br>What is not supported<br>Which tiers are supported?	", a: "	Blob versioning<br>Snapshots<br>Hot, Cool and Cold	", tag: 0 },
+    { q: "	What is shared access signature?<br>When it is used?	", a: "	A SAS gives you granular control over the type of access you grant to clients who have the SAS. You can specify the time interval for which a SAS is valid<br>SAS is a secure way to share your storage resources without compromising your account keys	", tag: 0 },
+    { q: "	What is Azure Virtual Machine Scale Set?	", a: "	Virtual Machine Scale Sets automatically increases the number of your virtual machine instances as application demand increases, and reduces the number of machine instances as demand decreases	", tag: 0 },
+    { q: "	How do applications run on Free or Shared tier in App Service plans?	", a: "	Applications run on a shared virtual machine instance<br>Applications can't scale out	", tag: 0 },
+    { q: "	How do applications run on Basic, Standard, Premium, or Isolated tier in App Service plans?	", a: "	Applications run on all virtual machine instances configured in the App Service plan<br>Multiple applications in the same plan share the same virtual machine instances	", tag: 0 },
+    { q: "	Which three access tiers where the backups could be stored are available?	", a: "	Snapshot tier<br>Standard tier<br>Archive tier	", tag: 0 },
   ],
 
 };

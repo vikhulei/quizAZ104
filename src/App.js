@@ -62,6 +62,7 @@ const App = () => {
           <option value='ToolsAndRM'>Tools And Res Mng</option>
           <option value='NSG'>Network Security Groups</option>
           <option value='DNS'>DNS</option>
+          <option value='TheRest1'>TheRest1</option>
         </select>
         <div className="repeat">
           <label>R</label>
