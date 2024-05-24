@@ -1,6 +1,10 @@
 const Questions = {
   Exam: [
     { q: "	Which option can you use to manage governance across multiple Azure subscriptions?	", a: "	Management groups facilitate the hierarchical ordering of Azure resources into collections, at a level of scope above subscriptions	", tag: 0 },
+    { q: ". Which roles can you clone to create the new roles? ", a: " Built in and subscription roles ", tag: 0 },
+    { q: "  What is a service tag? ", a: "A service tag represents a group of IP address prefixes from a given Azure service.  ", tag: 0 },
+    { q: "  ", a: "", tag: 0 },
+
   ],
   EntraID: [
     { q: "Three types of user accounts", a: "1) Cloud<br>2) Directory synchronized<br>3) Guest user", tag: 0 },
