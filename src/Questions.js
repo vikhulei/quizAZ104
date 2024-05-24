@@ -3,9 +3,11 @@ const Questions = {
     { q: "	Which option can you use to manage governance across multiple Azure subscriptions?	", a: "	Management groups facilitate the hierarchical ordering of Azure resources into collections, at a level of scope above subscriptions	", tag: 0 },
     { q: ". Which roles can you clone to create the new roles? ", a: " Built in and subscription roles ", tag: 0 },
     { q: "  What is a service tag? ", a: "A service tag represents a group of IP address prefixes from a given Azure service.  ", tag: 0 },
-    { q: "  Is licensing applied to a nested groups? ", a: "No", tag: 0 },
+    { q: "  Is licensing applied to a nested groups?<br>Is a role applied to a nested group? ", a: "No<br>No", tag: 0 },
+    { q: "What is private endpoint? ", a: " The private endpoint uses a separate IP address from the VNet address space. Network traffic between the clients on the VNet and the storage account traverses over the VNet and a private link on the Microsoft backbone network, eliminating exposure from the public internet. ", tag: 0 },
     { q: "  ", a: "", tag: 0 },
-
+    { q: "  ", a: "", tag: 0 },
+    { q: "  ", a: "", tag: 0 },
   ],
   EntraID: [
     { q: "Three types of user accounts", a: "1) Cloud<br>2) Directory synchronized<br>3) Guest user", tag: 0 },
