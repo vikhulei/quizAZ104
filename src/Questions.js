@@ -13,6 +13,10 @@ const Questions = {
     { q: " Who is co-adminstrator? ", a: " Co-administrators have full access to all resources in a SUBSCRIPTION, including the ability to create, read, update, and delete resources. ", tag: 0 },
     { q: " Can you delete a group with an assigned Entra ID license?<br>Can you delete the user? ", a: " Group - no<br> User - probably yes ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
+
+
   ],
   EntraID: [
     { q: "Three types of user accounts", a: "1) Cloud<br>2) Directory synchronized<br>3) Guest user", tag: 0 },
