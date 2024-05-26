@@ -12,7 +12,8 @@ const Questions = {
     { q: " To which groups can you assign a Entra ID licenses?<br>What is mail-enabled security group? ", a: " Security and Microsoft365 with Security enabled. Not to Mail-enabled security<br>A mail-enabled security group can be used to distribute messages and to grant access permissions to resources in Active Directory ", tag: 0 },
     { q: " Who is co-adminstrator? ", a: " Co-administrators have full access to all resources in a SUBSCRIPTION, including the ability to create, read, update, and delete resources. ", tag: 0 },
     { q: " Can you delete a group with an assigned Entra ID license?<br>Can you delete the user? ", a: " Group - no<br> User - probably yes ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
+    { q: "  Which storage account can be used to export the data? To import data? ", a: " Export - Azure blob<br>Import - Blob and File", tag: 0 },
+    { q: "  Which accounts support tieing? ", a: " General Purpose v2 (GPv2) support tiring. General Purpose v1(GPv1) do not ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
 
