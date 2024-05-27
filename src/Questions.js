@@ -13,7 +13,10 @@ const Questions = {
     { q: " Who is co-adminstrator? ", a: " Co-administrators have full access to all resources in a SUBSCRIPTION, including the ability to create, read, update, and delete resources. ", tag: 0 },
     { q: " Can you delete a group with an assigned Entra ID license?<br>Can you delete the user? ", a: " Group - no<br> User - probably yes ", tag: 0 },
     { q: "  Which storage account can be used to export the data? To import data? ", a: " Export - Azure blob<br>Import - Blob and File", tag: 0 },
-    { q: "  Which accounts support tieing? ", a: " General Purpose v2 (GPv2) support tiring. General Purpose v1(GPv1) do not ", tag: 0 },
+    { q: "  Which accounts support tiering?<br>What is RAGRS? ", a: " General Purpose v2 (GPv2) support tiring. General Purpose v1(GPv1) do not<br>Read-access geo-redunt storage - secondary storage account, more expensive solution ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
 
