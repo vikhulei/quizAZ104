@@ -21,8 +21,11 @@ const Questions = {
     { q: " Can blobs be backed up to the vaults? ", a: " No ", tag: 0 },
   ],
   Exam2: [
-    { q: "  ", a: "  ", tag: 0},
-    { q: "  ", a: "  ", tag: 0},
+    { q: " What can be used to receive large amounts of data to Azure?", a: " Azure Files or Azure Blob, max is 5Tb. The method used is by shipping disk drives to Azure datacenter ", tag: 0},
+    { q: " How many replicaes are created with LRS? ZRS? GRS? RA-GRS?", a: " LRS - three<br>ZRS - three<br>GRS - 3 replicas in each of two regions<br>RA-GRS - same as GRS, but you can read the second copy", tag: 0},
+    { q: " Which of the following requires persistent storage - File Share, Blob, Table or Queue? ", a: " File Share ", tag: 0},
+    { q: " Difference between fault and update domains ", a: " 1) Azure ensures that no two resources in the same fault domain are running on the same physical hardware platform<br>2) Azure ensures that no two resources in the same update domain are updated at the same time<br>3) Azure supports up to three fault domains and up to 20 update domains ", tag: 0},
+    { q: " List actions to to set up Azure File Sync ", a: " 1) Deploy Storage Sync Service<br>2) Install Azure File Sync Agent<br>3) Register Windws Server with Storage Sync Service<br>4) Create sync group<br>5) Create cloud endpoint<br>6) Create a service endpoint  ", tag: 0},
     { q: "  ", a: "  ", tag: 0},
 
   ],
