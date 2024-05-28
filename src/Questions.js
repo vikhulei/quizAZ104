@@ -1,5 +1,5 @@
 const Questions = {
-  Exam: [
+  Exam1: [
     { q: "	Which option can you use to manage governance across multiple Azure subscriptions?	", a: "	Management groups facilitate the hierarchical ordering of Azure resources into collections, at a level of scope above subscriptions	", tag: 0 },
     { q: ". Which roles can you clone to create the new roles? ", a: " Built in and subscription roles ", tag: 0 },
     { q: "  What is a service tag? ", a: "A service tag represents a group of IP address prefixes from a given Azure service.  ", tag: 0 },
@@ -14,14 +14,19 @@ const Questions = {
     { q: " Can you delete a group with an assigned Entra ID license?<br>Can you delete the user? ", a: " Group - no<br> User - probably yes ", tag: 0 },
     { q: "  Which storage account can be used to export the data? To import data? ", a: " Export - Azure blob<br>Import - Blob and File", tag: 0 },
     { q: "  Which accounts support tiering?<br>What is RAGRS? ", a: " General Purpose v2 (GPv2) support tiring. General Purpose v1(GPv1) do not<br>Read-access geo-redunt storage - secondary storage account, more expensive solution ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
-
+    { q: " Which accounts can be turned to zone-redundant storage (ZRS)? ", a: " Standard general-purpose v2, File Share, BlockBlobStorage, Standard (Premium have to be done manually), LRS replication type ", tag: 0 },
+    { q: " GRS and RA GRS replication is synchronous or asynchronous? ", a: " Asynchronous ", tag: 0 },
+    { q: " Which two files should you create before using the Azure Import/Export service to copy files to a storage account? ", a: " a dataset CSV file<br>a driveset CSV file ", tag: 0 },
+    { q: " Can you delete a vault which is configured as a backup? ", a: " No, you need to stop the backup first ", tag: 0 },
+    { q: " Can blobs be backed up to the vaults? ", a: " No ", tag: 0 },
+  ],
+  Exam2: [
+    { q: "  ", a: "  ", tag: 0},
+    { q: "  ", a: "  ", tag: 0},
+    { q: "  ", a: "  ", tag: 0},
 
   ],
+  
   EntraID: [
     { q: "Three types of user accounts", a: "1) Cloud<br>2) Directory synchronized<br>3) Guest user", tag: 0 },
     { q: "Three templates to create cloud user", a: "1) Create user<br>2) Invite user<br>3) Create B2C user", tag: 0 },
