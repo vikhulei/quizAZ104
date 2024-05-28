@@ -26,6 +26,7 @@ const Questions = {
     { q: " Which of the following requires persistent storage - File Share, Blob, Table or Queue? ", a: " File Share ", tag: 0},
     { q: " Difference between fault and update domains ", a: " 1) Azure ensures that no two resources in the same fault domain are running on the same physical hardware platform<br>2) Azure ensures that no two resources in the same update domain are updated at the same time<br>3) Azure supports up to three fault domains and up to 20 update domains ", tag: 0},
     { q: " List actions to to set up Azure File Sync ", a: " 1) Deploy Storage Sync Service<br>2) Install Azure File Sync Agent<br>3) Register Windws Server with Storage Sync Service<br>4) Create sync group<br>5) Create cloud endpoint<br>6) Create a service endpoint  ", tag: 0},
+    { q: " Can storage accounts exist in different locations/regions and subscriptions than backup vaults?<br>What about Log Analytics? ", a: " The location and subscription where this Log Analytics workspace can be created is independent of the location and subscription where your vaults exist.<br>Log Analytics workspaces and backup vaults have to be in the same region ", tag: 0},
     { q: "  ", a: "  ", tag: 0},
 
   ],
