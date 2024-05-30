@@ -27,8 +27,13 @@ const Questions = {
     { q: " Difference between fault and update domains ", a: " 1) Azure ensures that no two resources in the same fault domain are running on the same physical hardware platform<br>2) Azure ensures that no two resources in the same update domain are updated at the same time<br>3) Azure supports up to three fault domains and up to 20 update domains ", tag: 0},
     { q: " List actions to to set up Azure File Sync ", a: " 1) Deploy Storage Sync Service<br>2) Install Azure File Sync Agent<br>3) Register Windws Server with Storage Sync Service<br>4) Create sync group<br>5) Create cloud endpoint<br>6) Create a service endpoint  ", tag: 0},
     { q: " Can storage accounts exist in different locations/regions and subscriptions than backup vaults?<br>What about Log Analytics? ", a: " The location and subscription where this Log Analytics workspace can be created is independent of the location and subscription where your vaults exist.<br>Log Analytics workspaces and backup vaults have to be in the same region ", tag: 0},
-    { q: "  ", a: "  ", tag: 0},
-
+    { q: " What is the process of enabling Backup on VM? ", a: " 1) Install the agent (done automatically for VM from marketplace)<br>2) Select Virtual Machine - Backup<br>3) Recovery Services Vault - select existing or create new<br>4) Backup Policy<br>5) Enable Backup  ", tag: 0},
+    { q: " Which type of storage account supports LRS?<br>What about ZRS and GRS? ", a: " Standard general-purpose v1<br>Standard general-purpose v2 ", tag: 0 },
+    { q: " What can you do with Azure Storage Explorer? ", a: " Append and add any data, create shares, but NOT create storage accounts ", tag: 0 },
+    { q: " Maximumn number of policies for the container?", a: " Stored access policies - 5<br>Immutable blob storage - 2 ", tag: 0 },
+    { q: " What accounts support lifecycle management?<br>Moving to archive? ", a: " All blobs in general-purpose v2, premium block blob, and Blob Storage accounts<br>Only configured for LRS, GRS, or RA-GRS  ", tag: 0 },
+    { q: " Which storage services support conditions when assigning roles ", a: " Containers ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
   ],
   
   EntraID: [
