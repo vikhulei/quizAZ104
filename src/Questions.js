@@ -33,6 +33,9 @@ const Questions = {
     { q: " Maximumn number of policies for the container?", a: " Stored access policies - 5<br>Immutable blob storage - 2 ", tag: 0 },
     { q: " What accounts support lifecycle management?<br>Moving to archive? ", a: " All blobs in general-purpose v2, premium block blob, and Blob Storage accounts<br>Only configured for LRS, GRS, or RA-GRS  ", tag: 0 },
     { q: " Which storage services support conditions when assigning roles ", a: " Containers ", tag: 0 },
+    { q: " How to ensure the service/serveer runs on all VMs after deployment? ", a: " Use DSC ", tag: 0 },
+    { q: " How to ensure that the users can view only specific blobs based on blob index tags? ", a: " Set it up in shared access signature ", tag: 0 },
+    { q: " What can you encrypt with Encryption Scope? ", a: " Containers and blobs ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   
