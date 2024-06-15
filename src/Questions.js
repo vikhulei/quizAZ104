@@ -1,5 +1,5 @@
 const Questions = {
-  Exam1: [
+  Exam1_Entra_Storage: [
     { q: "	Which option can you use to manage governance across multiple Azure subscriptions?	", a: "	Management groups facilitate the hierarchical ordering of Azure resources into collections, at a level of scope above subscriptions	", tag: 0 },
     { q: ". Which roles can you clone to create the new roles? ", a: " Built in and subscription roles ", tag: 0 },
     { q: "  What is a service tag? ", a: "A service tag represents a group of IP address prefixes from a given Azure service.  ", tag: 0 },
@@ -19,8 +19,6 @@ const Questions = {
     { q: " Which two files should you create before using the Azure Import/Export service to copy files to a storage account? ", a: " a dataset CSV file<br>a driveset CSV file ", tag: 0 },
     { q: " Can you delete a vault which is configured as a backup? ", a: " No, you need to stop the backup first ", tag: 0 },
     { q: " Can blobs be backed up to the vaults? ", a: " No ", tag: 0 },
-  ],
-  Exam2: [
     { q: " What can be used to receive large amounts of data to Azure?", a: " Azure Files or Azure Blob, max is 5Tb. The method used is by shipping disk drives to Azure datacenter ", tag: 0},
     { q: " How many replicaes are created with LRS? ZRS? GRS? RA-GRS?", a: " LRS - three<br>ZRS - three<br>GRS - 3 replicas in each of two regions<br>RA-GRS - same as GRS, but you can read the second copy", tag: 0},
     { q: " Which of the following requires persistent storage - File Share, Blob, Table or Queue? ", a: " File Share ", tag: 0},
@@ -33,7 +31,11 @@ const Questions = {
     { q: " Maximumn number of policies for the container?", a: " Stored access policies - 5<br>Immutable blob storage - 2 ", tag: 0 },
     { q: " What accounts support lifecycle management?<br>Moving to archive? ", a: " All blobs in general-purpose v2, premium block blob, and Blob Storage accounts<br>Only configured for LRS, GRS, or RA-GRS  ", tag: 0 },
     { q: " Which storage services support conditions when assigning roles ", a: " Containers ", tag: 0 },
+    { q: " What are these ports - 80, 443, 445, 3389? ", a: " 80 - HTTP<br>443 - HTTPS<br>445 - SMB<br>3389 - RDP ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
+  ],
+  Exam2_Network: [
+    
   ],
   
   EntraID: [
