@@ -1,47 +1,66 @@
 const Questions = {
   Exam1_Entra_Storage: [
+    //subscriptions - RBAC
     { q: "	Which option can you use to manage governance across multiple Azure subscriptions?	", a: "	Management groups facilitate the hierarchical ordering of Azure resources into collections, at a level of scope above subscriptions	", tag: 0 },
     { q: ". Which roles can you clone to create the new roles? ", a: " Built in and subscription roles ", tag: 0 },
-    { q: "  What is a service tag? ", a: "A service tag represents a group of IP address prefixes from a given Azure service.  ", tag: 0 },
     { q: "  Is licensing applied to a nested groups?<br>Is a role applied to a nested group? ", a: "No<br>No", tag: 0 },
-    { q: "What is private endpoint? ", a: " The private endpoint uses a separate IP address from the VNet address space. Network traffic between the clients on the VNet and the storage account traverses over the VNet and a private link on the Microsoft backbone network, eliminating exposure from the public internet. ", tag: 0 },
-    { q: " Which role is required to modify DNS and other network settings? ", a: " Network Contributor ", tag: 0 },
+    { q: " Who is co-adminstrator? ", a: " Co-administrators have full access to all resources in a SUBSCRIPTION, including the ability to create, read, update, and delete resources. ", tag: 0 },
+    
+    //Entra
     { q: " What is required for an external user invitation? ", a: " Email address<br>InviteReirectUrl ", tag: 0 },
-    { q: " What is AzCopy?<br>Which authentication method should you use for a Blob?<br>For a file share? ", a: " AzCopy is a command-line utility that you can use to copy blobs or files to or from a storage account<br>Azure AD and SAS<br>Only SAS ", tag: 0 },
     { q: " Which two settings should you configure from the Overview blade to change the login name/email for the invited user?  ", a: " Identities - mail<br>BB collaboration - Reset redemption status ", tag: 0 },
     { q: " To which groups can you assign a Entra ID licenses?<br>What is mail-enabled security group? ", a: " Security and Microsoft365 with Security enabled. Not to Mail-enabled security<br>A mail-enabled security group can be used to distribute messages and to grant access permissions to resources in Active Directory ", tag: 0 },
-    { q: " Who is co-adminstrator? ", a: " Co-administrators have full access to all resources in a SUBSCRIPTION, including the ability to create, read, update, and delete resources. ", tag: 0 },
     { q: " Can you delete a group with an assigned Entra ID license?<br>Can you delete the user? ", a: " Group - no<br> User - probably yes ", tag: 0 },
+
+    //storage accounts
+    {q: " What is storage account access key? ", a: " When you create a storage account, Azure generates two 512-bit storage account access keys for that account ", tag: 0},
+    {q: " What are two types of Performance for an account? ", a: " Standard - for general account v2<br>Premium - for Block Blob, FileShare ", tag: 0},
+    {q: " What is stored access policy used for? ", a: " Start time, expire time and permision for SAS signature ", tag: 0},
+    { q: " What is AzCopy?<br>Which authentication method should you use for a Blob?<br>For a file share? ", a: " AzCopy is a command-line utility that you can use to copy blobs or files to or from a storage account, Windows, Linux and macOS supported<br>Azure AD and SAS<br>Only SAS ", tag: 0 },
     { q: "  Which storage account can be used to export the data? To import data? ", a: " Export - Azure blob<br>Import - Blob and File", tag: 0 },
     { q: "  Which accounts support tiering?<br>What is RAGRS? ", a: " General Purpose v2 (GPv2) support tiring. General Purpose v1(GPv1) do not<br>Read-access geo-redunt storage - secondary storage account, more expensive solution ", tag: 0 },
     { q: " Which accounts can be turned to zone-redundant storage (ZRS)? ", a: " Standard general-purpose v2, File Share, BlockBlobStorage, Standard (Premium have to be done manually), LRS replication type ", tag: 0 },
     { q: " GRS and RA GRS replication is synchronous or asynchronous? ", a: " Asynchronous ", tag: 0 },
     { q: " Which two files should you create before using the Azure Import/Export service to copy files to a storage account? ", a: " a dataset CSV file<br>a driveset CSV file ", tag: 0 },
-    { q: " Can you delete a vault which is configured as a backup? ", a: " No, you need to stop the backup first ", tag: 0 },
-    { q: " Can blobs be backed up to the vaults? ", a: " No ", tag: 0 },
-    { q: " What can be used to receive large amounts of data to Azure?", a: " Azure Files or Azure Blob, max is 5Tb. The method used is by shipping disk drives to Azure datacenter ", tag: 0},
-    { q: " How many replicaes are created with LRS? ZRS? GRS? RA-GRS?", a: " LRS - three<br>ZRS - three<br>GRS - 3 replicas in each of two regions<br>RA-GRS - same as GRS, but you can read the second copy", tag: 0},
+    { q: " Where can you copy large amounts of data? Which tool is used?", a: " Azure Files or Azure Blob, max is 5Tb. The method used is by shipping disk drives to Azure datacenter<br> The tool is Azure Import/Export ", tag: 0},
+    { q: " How many replicas are created with LRS? ZRS? GRS? RA-GRS?", a: " LRS - three<br>ZRS - three<br>GRS - 3 replicas in each of two regions<br>RA-GRS - same as GRS, but you can read the second copy", tag: 0},
     { q: " Which of the following requires persistent storage - File Share, Blob, Table or Queue? ", a: " File Share ", tag: 0},
-    { q: " Difference between fault and update domains ", a: " 1) Azure ensures that no two resources in the same fault domain are running on the same physical hardware platform<br>2) Azure ensures that no two resources in the same update domain are updated at the same time<br>3) Azure supports up to three fault domains and up to 20 update domains ", tag: 0},
-    { q: " List actions to to set up Azure File Sync ", a: " 1) Deploy Storage Sync Service<br>2) Install Azure File Sync Agent<br>3) Register Windws Server with Storage Sync Service<br>4) Create sync group<br>5) Create cloud endpoint<br>6) Create a service endpoint  ", tag: 0},
+    { q: " List actions to set up Azure File Sync ", a: " 1) Deploy Storage Sync Service<br>2) Install Azure File Sync Agent<br>3) Register Windws Server with Storage Sync Service<br>4) Create sync group<br>5) Create cloud endpoint<br>6) Create a service endpoint  ", tag: 0},
     { q: " Can storage accounts exist in different locations/regions and subscriptions than backup vaults?<br>What about Log Analytics? ", a: " The location and subscription where this Log Analytics workspace can be created is independent of the location and subscription where your vaults exist.<br>Log Analytics workspaces and backup vaults have to be in the same region ", tag: 0},
-    { q: " What is the process of enabling Backup on VM? ", a: " 1) Install the agent (done automatically for VM from marketplace)<br>2) Select Virtual Machine - Backup<br>3) Recovery Services Vault - select existing or create new<br>4) Backup Policy<br>5) Enable Backup  ", tag: 0},
     { q: " Which type of storage account supports LRS?<br>What about ZRS and GRS? ", a: " Standard general-purpose v1<br>Standard general-purpose v2 ", tag: 0 },
     { q: " What can you do with Azure Storage Explorer? ", a: " Append and add any data, create shares, but NOT create storage accounts ", tag: 0 },
-    { q: " Maximumn number of policies for the container?", a: " Stored access policies - 5<br>Immutable blob storage - 2 ", tag: 0 },
+    
+    //storage blobs
     { q: " What accounts support lifecycle management?<br>Moving to archive? ", a: " All blobs in general-purpose v2, premium block blob, and Blob Storage accounts<br>Only configured for LRS, GRS, or RA-GRS  ", tag: 0 },
-    { q: " Which storage services support conditions when assigning roles ", a: " Containers ", tag: 0 },
-    { q: " How to ensure the service/serveer runs on all VMs after deployment? ", a: " Use DSC ", tag: 0 },
     { q: " How to ensure that the users can view only specific blobs based on blob index tags? ", a: " Set it up in shared access signature ", tag: 0 },
     { q: " What can you encrypt with Encryption Scope? ", a: " Containers and blobs ", tag: 0 },
+    { q: " Can blobs be backed up to the vaults? ", a: " No ", tag: 0 },
+    { q: " Two roles to be able to upload files ", a: " Reader - to view storage account resources<br>Blob Data Contributor - to upload data to the blob ", tag: 0 },
+
+    
+    //VMs & containers
+    { q: " Which storage services support conditions when assigning roles ", a: " Containers ", tag: 0 },
+    { q: " How to ensure the service/server runs on all VMs after deployment? ", a: " Use DSC ", tag: 0 },
     { q: " How can you protect both operating system disks and data disks with full volume encryption? ", a: " By using Azure Disk Encryption ", tag: 0 },
+    { q: " Can you delete a vault which is configured as a backup? ", a: " No, you need to stop the backup first ", tag: 0 },
+    { q: " Difference between fault and update domains ", a: " 1) Azure ensures that no two resources in the same fault domain are running on the same physical hardware platform<br>2) Azure ensures that no two resources in the same update domain are updated at the same time<br>3) Azure supports up to three fault domains and up to 20 update domains ", tag: 0},
+    { q: " What is the process of enabling Backup on VM? ", a: " 1) Install the agent (done automatically for VM from marketplace)<br>2) Select Virtual Machine - Backup<br>3) Recovery Services Vault - select existing or create new<br>4) Backup Policy<br>5) Enable Backup  ", tag: 0},
+    { q: " Maximumn number of policies for the container?", a: " Stored access policies - 5<br>Immutable blob storage - 2 ", tag: 0 },
     { q: " What are these ports - 80, 443, 445, 3389? ", a: " 80 - HTTP<br>443 - HTTPS<br>445 - SMB<br>3389 - RDP ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
+
     { q: "  ", a: "  ", tag: 0 },
   ],
   Exam2_Network: [
+    { q: "  What is a service tag? ", a: "A service tag represents a group of IP address prefixes from a given Azure service.  ", tag: 0 },
+    { q: "What is private endpoint? ", a: " The private endpoint uses a separate IP address from the VNet address space. Network traffic between the clients on the VNet and the storage account traverses over the VNet and a private link on the Microsoft backbone network, eliminating exposure from the public internet. ", tag: 0 },
+    { q: " Which role is required to modify DNS and other network settings? ", a: " Network Contributor ", tag: 0 },
     
+  ],
+  
+  Miscellanious: [
+    { q: " Command to copy content of a folder to the contaniner ", a: " az copy d:\folder https://containername ¬ recursive ", tag: 0 },
+    { q: " Which key should be used to for a custom-managed encryption? ", a: " RSA key with 2048, 3072, 4096 encryption ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
   ],
   
   EntraID: [

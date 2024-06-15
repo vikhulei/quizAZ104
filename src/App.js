@@ -54,7 +54,8 @@ const App = () => {
       <div className="top_bar">
         <select name="category" id="category" onChange={click_category}>
           <option value='Exam1_Entra_Storage'>Exam1_Entra_Storage</option>
-          <option value='Exam2'>Exam2</option>
+          <option value='Exam2_Network'>Exam2_Network</option>
+          <option value='Miscellanious'>Miscellanious</option>
           <option value='EntraID'>Entra ID</option>
           <option value='UsersAndGroups'>Users & Groups</option>
           <option value='Subscriptions'>Subscriptions</option>
