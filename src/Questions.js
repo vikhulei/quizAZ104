@@ -35,9 +35,9 @@ const Questions = {
     { q: " How to ensure that the users can view only specific blobs based on blob index tags? ", a: " Set it up in shared access signature ", tag: 0 },
     { q: " What can you encrypt with Encryption Scope? ", a: " Containers and blobs ", tag: 0 },
     { q: " How can you protect both operating system disks and data disks with full volume encryption? ", a: " By using Azure Disk Encryption ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
     { q: " What are these ports - 80, 443, 445, 3389? ", a: " 80 - HTTP<br>443 - HTTPS<br>445 - SMB<br>3389 - RDP ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   Exam2_Network: [
