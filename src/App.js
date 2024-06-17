@@ -53,7 +53,8 @@ const App = () => {
     <div className="wrapper">
       <div className="top_bar">
         <select name="category" id="category" onChange={click_category}>
-          <option value='Exam1_Entra_Storage'>Exam1_Entra_Storage</option>
+          <option value='Exam_Entra_Blobs_VMs_Containere'>Exam_Entra_Blobs_VMs_Container</option>
+          <option value='Exam1_Storage'>Exam1_Storage</option>
           <option value='Exam2_Network'>Exam2_Network</option>
           <option value='Miscellanious'>Miscellanious</option>
           <option value='EntraID'>Entra ID</option>
