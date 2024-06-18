@@ -55,7 +55,7 @@ const App = () => {
         <select name="category" id="category" onChange={click_category}>
           <option value='Exam_Entra_Blobs_VMs_Container'>Exam_Entra_Blobs_VMs_Container</option>
           <option value='Exam_Storage'>Exam_Storage</option>
-          <option value='Exam_LogAnalytics'>Exam_LogAnalytics</option>
+          <option value='Exam_Monitoring'>Exam_Monitoring</option>
           <option value='Exam_Network'>Exam_Network</option>
           <option value='Miscellanious'>Miscellanious</option>
           <option value='EntraID'>Entra ID</option>

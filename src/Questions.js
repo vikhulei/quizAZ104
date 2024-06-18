@@ -33,6 +33,7 @@ const Questions = {
     { q: " What are these ports - 80, 443, 445, 3389? ", a: " 80 - HTTP<br>443 - HTTPS<br>445 - SMB<br>3389 - RDP ", tag: 0 },
     { q: " What is the rtole definition to be able to read configuration data of a storage account? ", a: " /read ", tag: 0 },
     { q: " How to use Azure Automation State Configuration? ", a: " 1. Upload a configuration to AASC<br>2. Compile configuration into a node config<br>3. Check the compliance status ", tag: 0 },
+    { q: " To deploy 5 VMs scale set? ", a: " Set the scale to ScaleSetVM orchestration mode ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   Exam_Storage: [
@@ -59,8 +60,9 @@ const Questions = {
   ],
   
   
-  Exam_LogAnalytics: [
+  Exam_Monitoring: [
     { q: " How to monitor error on a VM? ", a: " Create Azure Log Analytics - Install Microsoft Monitoring Agent on VM - Create an Alert in Microsoft Monitor and specify LogAnalytics as the source ", tag: 0 },
+    { q: " Maximum number of alert emails?<br>Maximum number of alert SMS?<br>Maximum number of voice message? ", a: " Emails - 100 in an hour<br>SMS - 1 every 5 min<br>Voice - 1 call every 5 min ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
   ],
@@ -69,9 +71,11 @@ const Questions = {
     { q: "  What is a service tag? ", a: "A service tag represents a group of IP address prefixes from a given Azure service.  ", tag: 0 },
     { q: "What is private endpoint? ", a: " The private endpoint uses a separate IP address from the VNet address space. Network traffic between the clients on the VNet and the storage account traverses over the VNet and a private link on the Microsoft backbone network, eliminating exposure from the public internet. ", tag: 0 },
     { q: " Which role is required to modify DNS and other network settings? ", a: " Network Contributor ", tag: 0 },
+    { q: " What needs to be done to record all succefull and failed connection attempts to VM? ", a: " 1) Enable Azure Netowork Watcher<br>2) Register Microsot.Insider resiurce provider<br>3) Enable Azure Network Watcher flow logs ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
     
   ],
-  
+
   Miscellanious: [
     { q: " Command to copy content of a folder to the contaniner ", a: " az copy d:\folder https://containername ¬ recursive ", tag: 0 },
     { q: " Which key should be used to for a custom-managed encryption? ", a: " RSA key with 2048, 3072, 4096 encryption ", tag: 0 },
@@ -84,6 +88,7 @@ const Questions = {
     { q: " Can the object be transfered from Archive to Cool tier? ", a: " No, it should go to Hot first ", tag: 0 },
     { q: " Deploy YAML file to Azure Kubernetes ", a: " kubectl client ", tag: 0 },
     { q: " What needs to be modified in the Template to deploy a VM to the specific region? ", a: " Location in the resources ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   
