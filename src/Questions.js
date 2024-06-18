@@ -19,6 +19,8 @@ const Questions = {
     { q: " Can blobs be backed up to the vaults? ", a: " No ", tag: 0 },
     { q: " Two roles to be able to upload files ", a: " Reader - to view storage account resources<br>Blob Data Contributor - to upload data to the blob ", tag: 0 },
 
+    //applications
+    {q: " What is scale up for Applications? ", a: " More CPU, disk space, memory, dedicated VMs, custome domains, staging slots etc. ", tag: 0},
     
     //VMs & containers
     { q: " Which storage services support conditions when assigning roles ", a: " Containers ", tag: 0 },
@@ -30,9 +32,10 @@ const Questions = {
     { q: " Maximumn number of policies for the container?", a: " Stored access policies - 5<br>Immutable blob storage - 2 ", tag: 0 },
     { q: " What are these ports - 80, 443, 445, 3389? ", a: " 80 - HTTP<br>443 - HTTPS<br>445 - SMB<br>3389 - RDP ", tag: 0 },
     { q: " What is the rtole definition to be able to read configuration data of a storage account? ", a: " /read ", tag: 0 },
+    { q: " How to use Azure Automation State Configuration? ", a: " 1. Upload a configuration to AASC<br>2. Compile configuration into a node config<br>3. Check the compliance status ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
-  Exam1_Storage: [
+  Exam_Storage: [
     //storage accounts
     {q: " What is storage account access key? ", a: " When you create a storage account, Azure generates two 512-bit storage account access keys for that account ", tag: 0},
     {q: " What are two types of Performance for an account? ", a: " Standard - for general account v2<br>Premium - for Block Blob, FileShare ", tag: 0},
@@ -54,7 +57,15 @@ const Questions = {
     
     
   ],
-  Exam2_Network: [
+  
+  
+  Exam_LogAnalytics: [
+    { q: " How to monitor error on a VM? ", a: " Create Azure Log Analytics - Install Microsoft Monitoring Agent on VM - Create an Alert in Microsoft Monitor and specify LogAnalytics as the source ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
+    
+  ],
+  
+  Exam_Network: [
     { q: "  What is a service tag? ", a: "A service tag represents a group of IP address prefixes from a given Azure service.  ", tag: 0 },
     { q: "What is private endpoint? ", a: " The private endpoint uses a separate IP address from the VNet address space. Network traffic between the clients on the VNet and the storage account traverses over the VNet and a private link on the Microsoft backbone network, eliminating exposure from the public internet. ", tag: 0 },
     { q: " Which role is required to modify DNS and other network settings? ", a: " Network Contributor ", tag: 0 },
@@ -68,6 +79,11 @@ const Questions = {
     { q: " What needs to be changed to minimize network cost?<br>What can you modfify after account creation?  ", a: " Performance<br>Enable support for cutomer-managed keys ", tag: 0 },
     { q: " How to ensure that no data is lost if a host fails? ", a: " To set up host caching to Read/Write ", tag: 0 },
     { q: " How to ensure the user can dowloan blobs by name? ", a: " Select Object in SAS ", tag: 0 },
+    { q: " Which accounts can be converted to ZRS? ", a: " Standart V2, Premium BlockBlob or Premium File Share ", tag: 0 },
+    { q: " Which paramter in SAS should be on to list blobs in the container? ", a: " Read for the comtainer ", tag: 0 },
+    { q: " Can the object be transfered from Archive to Cool tier? ", a: " No, it should go to Hot first ", tag: 0 },
+    { q: " Deploy YAML file to Azure Kubernetes ", a: " kubectl client ", tag: 0 },
+    { q: " What needs to be modified in the Template to deploy a VM to the specific region? ", a: " Location in the resources ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   

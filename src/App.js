@@ -8,7 +8,7 @@ const App = () => {
     a: "Press Next",
     tag: 0
   });
-  const [category, setCategory] = useState("Exam1_Entra_Storage");
+  const [category, setCategory] = useState("Exam_Entra_Blobs_VMs_Container");
   const [flip, setFlip] = useState(false);
   const [repeat, setRepeat] = useState(false);
   const [prevQ, setPrevQ] = useState({});
@@ -53,9 +53,10 @@ const App = () => {
     <div className="wrapper">
       <div className="top_bar">
         <select name="category" id="category" onChange={click_category}>
-          <option value='Exam_Entra_Blobs_VMs_Containere'>Exam_Entra_Blobs_VMs_Container</option>
-          <option value='Exam1_Storage'>Exam1_Storage</option>
-          <option value='Exam2_Network'>Exam2_Network</option>
+          <option value='Exam_Entra_Blobs_VMs_Container'>Exam_Entra_Blobs_VMs_Container</option>
+          <option value='Exam_Storage'>Exam_Storage</option>
+          <option value='Exam_LogAnalytics'>Exam_LogAnalytics</option>
+          <option value='Exam_Network'>Exam_Network</option>
           <option value='Miscellanious'>Miscellanious</option>
           <option value='EntraID'>Entra ID</option>
           <option value='UsersAndGroups'>Users & Groups</option>
