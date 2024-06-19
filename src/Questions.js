@@ -34,6 +34,8 @@ const Questions = {
     { q: " What is the rtole definition to be able to read configuration data of a storage account? ", a: " /read ", tag: 0 },
     { q: " How to use Azure Automation State Configuration? ", a: " 1. Upload a configuration to AASC<br>2. Compile configuration into a node config<br>3. Check the compliance status ", tag: 0 },
     { q: " To deploy 5 VMs scale set? ", a: " Set the scale to ScaleSetVM orchestration mode ", tag: 0 },
+    { q: " Which commands are used to autoscale Kubernetes cluster? ", a: " 1) kubectl - to configure autoscaling<br>2) az aks - to enable autoscale on the node ", tag: 0 },
+    { q: " What can be used in the runbook to increase the VM's processor performance at the end of the month? ", a: " DSC ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   Exam_Storage: [
@@ -72,6 +74,7 @@ const Questions = {
     { q: "What is private endpoint? ", a: " The private endpoint uses a separate IP address from the VNet address space. Network traffic between the clients on the VNet and the storage account traverses over the VNet and a private link on the Microsoft backbone network, eliminating exposure from the public internet. ", tag: 0 },
     { q: " Which role is required to modify DNS and other network settings? ", a: " Network Contributor ", tag: 0 },
     { q: " What needs to be done to record all succefull and failed connection attempts to VM? ", a: " 1) Enable Azure Netowork Watcher<br>2) Register Microsot.Insider resiurce provider<br>3) Enable Azure Network Watcher flow logs ", tag: 0 },
+    { q: " What is DNS port #? ", a: " 53 ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
   ],
@@ -88,7 +91,7 @@ const Questions = {
     { q: " Can the object be transfered from Archive to Cool tier? ", a: " No, it should go to Hot first ", tag: 0 },
     { q: " Deploy YAML file to Azure Kubernetes ", a: " kubectl client ", tag: 0 },
     { q: " What needs to be modified in the Template to deploy a VM to the specific region? ", a: " Location in the resources ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
+    { q: " What to use to deploy app to Kubernetes cluster? ", a: " Build and push the container image to Container Registry - az acr build ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   
