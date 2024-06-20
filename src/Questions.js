@@ -37,6 +37,8 @@ const Questions = {
     { q: " To deploy 5 VMs scale set? ", a: " Set the scale to ScaleSetVM orchestration mode ", tag: 0 },
     { q: " Which commands are used to autoscale Kubernetes cluster? ", a: " 1) kubectl - to configure autoscaling<br>2) az aks - to enable autoscale on the node ", tag: 0 },
     { q: " What can be used in the runbook to increase the VM's processor performance at the end of the month? ", a: " DSC ", tag: 0 },
+    { q: " What should be changed in the Network section for AKS to suppord Windows Server containers? ", a: " Network policy - Azure CNI ", tag: 0 },
+    { q: " Which platform can use Azure Container App? ", a: " Linux only ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   Exam_Storage: [
@@ -58,6 +60,7 @@ const Questions = {
     { q: " Which type of storage account supports LRS?<br>What about ZRS and GRS? ", a: " Standard general-purpose v1<br>Standard general-purpose v2 ", tag: 0 },
     { q: " What can you do with Azure Storage Explorer? ", a: " Append and add any data, create shares, but NOT create storage accounts ", tag: 0 },
     { q: " What is required for doing a backup for VMs, File Share, SQL Server?<br>For doing a backup for Azure Disks, Azure Blobs,PostgreSQL?<br>For App Service backup? ", a: " Recovery Service Vault<br>Backup Vault<br>Storage Account ", tag: 0 },
+    { q: " Which mode allows for deleting all resources from the RG before deploying new ones? ", a: " Complete ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
     
@@ -96,6 +99,8 @@ const Questions = {
     { q: " What to use to deploy app to Kubernetes cluster? ", a: " Build and push the container image to Container Registry - az acr build ", tag: 0 },
     { q: " What to do first if you want to do a backup to a different VM? ", a: " Install Mixrosoft Azure Recovery Services Agent on that VM ", tag: 0 },
     { q: " What should ARM contain for a type to join VM to domain? ", a: " virtualMachines/extensions ", tag: 0 },
+    { q: " Which platforms support multi-containeer groups? ", a: " Only Linux ", tag: 0 },
+    { q: " Which IPs can be used for Azure Firewall? ", a: " Static, Standard and IPv4 ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   
