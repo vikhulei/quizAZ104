@@ -21,6 +21,7 @@ const Questions = {
 
     //applications
     {q: " What is scale up for Applications? ", a: " More CPU, disk space, memory, dedicated VMs, custome domains, staging slots etc. ", tag: 0},
+    { q: " What should be first created before doing a backup for the app?  ", a: " Azure Storage Account ", tag: 0 },
     
     //VMs & containers
     { q: " Which storage services support conditions when assigning roles ", a: " Containers ", tag: 0 },
@@ -56,6 +57,7 @@ const Questions = {
     { q: " Can storage accounts exist in different locations/regions and subscriptions than backup vaults?<br>What about Log Analytics? ", a: " The location and subscription where this Log Analytics workspace can be created is independent of the location and subscription where your vaults exist.<br>Log Analytics workspaces and backup vaults have to be in the same region ", tag: 0},
     { q: " Which type of storage account supports LRS?<br>What about ZRS and GRS? ", a: " Standard general-purpose v1<br>Standard general-purpose v2 ", tag: 0 },
     { q: " What can you do with Azure Storage Explorer? ", a: " Append and add any data, create shares, but NOT create storage accounts ", tag: 0 },
+    { q: " What is required for doing a backup for VMs, File Share, SQL Server?<br>For doing a backup for Azure Disks, Azure Blobs,PostgreSQL?<br>For App Service backup? ", a: " Recovery Service Vault<br>Backup Vault<br>Storage Account ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
     
@@ -92,6 +94,8 @@ const Questions = {
     { q: " Deploy YAML file to Azure Kubernetes ", a: " kubectl client ", tag: 0 },
     { q: " What needs to be modified in the Template to deploy a VM to the specific region? ", a: " Location in the resources ", tag: 0 },
     { q: " What to use to deploy app to Kubernetes cluster? ", a: " Build and push the container image to Container Registry - az acr build ", tag: 0 },
+    { q: " What to do first if you want to do a backup to a different VM? ", a: " Install Mixrosoft Azure Recovery Services Agent on that VM ", tag: 0 },
+    { q: " What should ARM contain for a type to join VM to domain? ", a: " virtualMachines/extensions ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   
