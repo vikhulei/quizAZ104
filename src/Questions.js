@@ -99,6 +99,11 @@ const Questions = {
     { q: " How to add two VMs from different subnets to a bckend pool? ", a: " Create Standard IP addresses for both of them ", tag: 0 },
     { q: " Network Watcher features:<br>IP flow verify<br>Connection troubleshoot<br>Connection monitor<br>NSG flow logs ", a: " IP flow verify - specify source and dest IPv4, port, protocol and direction<br>Connection troubleshoot - test connection at a point of time<br>Connection monitor - test connection at regular intervals<br>NSG flow logs -whether traffic was allowed ", tag: 0 },
     { q: " All trafic to go from VPN gateway to VNet via VM ", a: " Address prefix - VNet<br>Next hop - Virtual appliance (which is VM)<br>Assigned to VPN gateway ", tag: 0 },
+    { q: " Can you create LB without a frontend IP address?<br>Wihtout backend pool?<br>Without the health probe? ", a: " No<br>Yes<br>Yes ", tag: 0 },
+    { q: " Which DNS server is used? ", a: " Either the Default (Azure-provided) or customly specified ", tag: 0 },
+    { q: " Are all connections between VMs on VLan allowed by default?  ", a: " Yes ", tag: 0 },
+    { q: " Does routing table has precedence before the system routes between subnets? ", a: " Yes. If VM which is next hop in RT is turned off, the connection will not happen ", tag: 0 },
+    { q: " What needs to be used for the web app to connect to on-prem share? ", a: " Azure Virtual Network Gateway ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
   ],
@@ -126,7 +131,7 @@ const Questions = {
     { q: " What should be used to validate connectivity in Azure Network Watcher? ", a: " Connection troubleshooting ", tag: 0 },
     { q: " What can be used to ping a VM? ", a: " A record only ", tag: 0 },
     { q: " What to configure to restrict traffic between pods? ", a: " the Calico network policy ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
+    { q: " Which SKU supports FastPath? ", a: " ErGw3AZ ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   
