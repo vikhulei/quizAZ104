@@ -40,6 +40,7 @@ const Questions = {
     { q: " What should be changed in the Network section for AKS to suppord Windows Server containers? ", a: " Network policy - Azure CNI ", tag: 0 },
     { q: " Which platform can use Azure Container App? ", a: " Linux only ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
   ],
   Exam_Storage: [
     //storage accounts
@@ -97,6 +98,7 @@ const Questions = {
     { q: " What does IP flow verify do? ", a: " Enables to specify source and destination IP address, ports, protocol and direction ", tag: 0 },
     { q: " How to add two VMs from different subnets to a bckend pool? ", a: " Create Standard IP addresses for both of them ", tag: 0 },
     { q: " Network Watcher features:<br>IP flow verify<br>Connection troubleshoot<br>Connection monitor<br>NSG flow logs ", a: " IP flow verify - specify source and dest IPv4, port, protocol and direction<br>Connection troubleshoot - test connection at a point of time<br>Connection monitor - test connection at regular intervals<br>NSG flow logs -whether traffic was allowed ", tag: 0 },
+    { q: " All trafic to go from VPN gateway to VNet via VM ", a: " Address prefix - VNet<br>Next hop - Virtual appliance (which is VM)<br>Assigned to VPN gateway ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
   ],
@@ -122,6 +124,9 @@ const Questions = {
     { q: " What needs to be used to move DNS zone to a different subsciption? ", a: " Azure PowerShell ", tag: 0 },
     { q: " How to include VM into Application security group? ", a: " Associate NIC to ASG ", tag: 0 },
     { q: " What should be used to validate connectivity in Azure Network Watcher? ", a: " Connection troubleshooting ", tag: 0 },
+    { q: " What can be used to ping a VM? ", a: " A record only ", tag: 0 },
+    { q: " What to configure to restrict traffic between pods? ", a: " the Calico network policy ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   
