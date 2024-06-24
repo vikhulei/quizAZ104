@@ -135,6 +135,9 @@ const Questions = {
     { q: " Which SKU supports FastPath? ", a: " ErGw3AZ ", tag: 0 },
     { q: " Which failover subnet wil be used from the list of subnets? ", a: " Either with the same name or the first one in alphabetical order ", tag: 0 },
     { q: " Which pport does Bastion use? ", a: " HTTPS - 443 ", tag: 0 },
+    { q: " Is Connection Monitor region-specific? ", a: " Yes ", tag: 0 },
+    { q: " Which option configures Microsoft point-of-presence? ", a: " Routing preference ", tag: 0 },
+    { q: " Can outbound rule restrict the destination port of another VM? ", a: " Yes ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   
