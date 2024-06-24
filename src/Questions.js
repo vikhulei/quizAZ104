@@ -90,8 +90,13 @@ const Questions = {
     { q: " How to create site-to-site connection? ", a: " (Start from Azure portal):<br>1. Create gateway subnet<br>2. Create VPN gateway<br>3. Create local gateway<br>4. Create VPN connection ", tag: 0 },
     { q: " What should be enabled for packets to go from Vnet2 to Vnet3, if both are peered to VNet1? ", a: " Gateway transit ", tag: 0 },
     { q: " What is a good way to easily connect VNets?<br>What must be provisioned? ", a: " Vnet-to-VNet<br>Virtual network gateways ", tag: 0 },
-    { q: " What needs to be installed on the compuiter for point-to-site VPN? ", a: " 1) VPN client configuration package<br>2) Client certificate ", tag: 0 },
+    { q: " What needs to be installed on the computer for point-to-site VPN? ", a: " 1) VPN client configuration package<br>2) Client certificate ", tag: 0 },
     { q: " What needs to be done to VNets to use DNS server on one of the VNets? ", a: " To configure peering ", tag: 0 },
+    { q: " Do you need NSG for VM to use it in backend pool? ", a: " Yes, otherwise all traffic is denied and load balancer would not be able to connect to it ", tag: 0 },
+    { q: " In which region needs the NIC to be created? ", a: " The same as VLan ", tag: 0 },
+    { q: " What does IP flow verify do? ", a: " Enables to specify source and destination IP address, ports, protocol and direction ", tag: 0 },
+    { q: " How to add two VMs from different subnets to a bckend pool? ", a: " Create Standard IP addresses for both of them ", tag: 0 },
+    { q: " Network Watcher features:<br>IP flow verify<br>Connection troubleshoot<br>Connection monitor<br>NSG flow logs ", a: " IP flow verify - specify source and dest IPv4, port, protocol and direction<br>Connection troubleshoot - test connection at a point of time<br>Connection monitor - test connection at regular intervals<br>NSG flow logs -whether traffic was allowed ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
   ],
@@ -116,6 +121,7 @@ const Questions = {
     { q: " Can you create new VM if Not Allowed has VirtualMAchines? ", a: " No ", tag: 0 },
     { q: " What needs to be used to move DNS zone to a different subsciption? ", a: " Azure PowerShell ", tag: 0 },
     { q: " How to include VM into Application security group? ", a: " Associate NIC to ASG ", tag: 0 },
+    { q: " What should be used to validate connectivity in Azure Network Watcher? ", a: " Connection troubleshooting ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   
