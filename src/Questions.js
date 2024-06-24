@@ -104,6 +104,7 @@ const Questions = {
     { q: " Are all connections between VMs on VLan allowed by default?  ", a: " Yes ", tag: 0 },
     { q: " Does routing table has precedence before the system routes between subnets? ", a: " Yes. If VM which is next hop in RT is turned off, the connection will not happen ", tag: 0 },
     { q: " What needs to be used for the web app to connect to on-prem share? ", a: " Azure Virtual Network Gateway ", tag: 0 },
+    { q: " How to properly configure DC in Azure? ", a: " Assign static address of the subnet<br>Create a private Azure DNS zone ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
   ],
@@ -132,6 +133,8 @@ const Questions = {
     { q: " What can be used to ping a VM? ", a: " A record only ", tag: 0 },
     { q: " What to configure to restrict traffic between pods? ", a: " the Calico network policy ", tag: 0 },
     { q: " Which SKU supports FastPath? ", a: " ErGw3AZ ", tag: 0 },
+    { q: " Which failover subnet wil be used from the list of subnets? ", a: " Either with the same name or the first one in alphabetical order ", tag: 0 },
+    { q: " Which pport does Bastion use? ", a: " HTTPS - 443 ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   
