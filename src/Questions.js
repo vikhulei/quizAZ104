@@ -72,6 +72,8 @@ const Questions = {
   Exam_Monitoring: [
     { q: " How to monitor error on a VM? ", a: " Create Azure Log Analytics - Install Microsoft Monitoring Agent on VM - Create an Alert in Microsoft Monitor and specify LogAnalytics as the source ", tag: 0 },
     { q: " Maximum number of alert emails?<br>Maximum number of alert SMS?<br>Maximum number of voice message? ", a: " Emails - 100 in an hour<br>SMS - 1 every 5 min<br>Voice - 1 call every 5 min ", tag: 0 },
+    { q: " How many action groups should be created?<br>How many alert rules should be created? ", a: " Groups - as amnhy as there are individual groups of users<br>Rules - as many as there are individual actions ", tag: 0 },
+    { q: " Are alerts sent to AD groups? ", a: " No ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
   ],
@@ -115,6 +117,7 @@ const Questions = {
     { q: " Which IP address sku can be used for Azure Bastion? ", a: " Only Standard ", tag: 0 },
     { q: " What needs to be moved to a different subscription together with VM? ", a: " All dependent resources ", tag: 0 },
     { q: " Can Bastion work accross different VNets? ", a: " Only if they are peered ", tag: 0 },
+    { q: " What needs to be configured for traffic between VNets to traves the Microsoft backbone network? ", a: " Peering ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
   ],
