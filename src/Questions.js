@@ -39,7 +39,7 @@ const Questions = {
     { q: " What can be used in the runbook to increase the VM's processor performance at the end of the month? ", a: " DSC ", tag: 0 },
     { q: " What should be changed in the Network section for AKS to suppord Windows Server containers? ", a: " Network policy - Azure CNI ", tag: 0 },
     { q: " Which platform can use Azure Container App? ", a: " Linux only ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
+    { q: " What is the minimum number of ip addresses for container apps? ", a: " 512 (/23) ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   Exam_Storage: [
@@ -109,6 +109,10 @@ const Questions = {
     { q: " Does routing table has precedence before the system routes between subnets? ", a: " Yes. If VM which is next hop in RT is turned off, the connection will not happen ", tag: 0 },
     { q: " What needs to be used for the web app to connect to on-prem share? ", a: " Azure Virtual Network Gateway ", tag: 0 },
     { q: " How to properly configure DC in Azure? ", a: " Assign static address of the subnet<br>Create a private Azure DNS zone ", tag: 0 },
+    { q: " How many connection can Basic Bastion have? ", a: " 2 instances of 20 RDP and 40 SSH ", tag: 0 },
+    { q: " How to establish connection to Bastion? ", a: " 1) Upgrade Bastion to Standard sku<br>2) Enable Native Client support<br>3) Connect to Bastion via RDP in Azure CLI ", tag: 0 },
+    { q: " Which IP address sku can be used for Azure Bastion? ", a: " Only Standard ", tag: 0 },
+    { q: " What needs to be moved to a different subscription together with VM? ", a: " All dependent resources ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
   ],
@@ -135,6 +139,7 @@ const Questions = {
     { q: " How to include VM into Application security group? ", a: " Associate NIC to ASG ", tag: 0 },
     { q: " What should be used to validate connectivity in Azure Network Watcher? ", a: " Connection troubleshooting ", tag: 0 },
     { q: " What can be protected with Azure Bastion? ", a: " Only VM ", tag: 0 },
+    { q: " What needs to be created to enable multi-user authorization? ", a: " A resource guard ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   
