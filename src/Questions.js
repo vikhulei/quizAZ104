@@ -40,6 +40,7 @@ const Questions = {
     { q: " What should be changed in the Network section for AKS to suppord Windows Server containers? ", a: " Network policy - Azure CNI ", tag: 0 },
     { q: " Which platform can use Azure Container App? ", a: " Linux only ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
   ],
   Exam_Storage: [
     //storage accounts
@@ -99,6 +100,13 @@ const Questions = {
     { q: " Network Watcher features:<br>IP flow verify<br>Connection troubleshoot<br>Connection monitor<br>NSG flow logs<br>packet capture", a: " IP flow verify - specify source and dest IPv4, port, protocol and direction<br>Connection troubleshoot - test connection at a point of time<br>Connection monitor - test connection between 2 ports at regular intervals<br>NSG flow logs -whether traffic was allowed<br>packet capture - track traffic to/from VM ", tag: 0 },
     { q: " Difference between standard and basicc LB? ", a: " Basic - VMs should be connected to the same availability set<br>Standard - to the same VNet ", tag: 0 },
     { q: " How many registration zones can VNet have?<br>How many resolution zones can VNet have? ", a: " One<br>Multiple ", tag: 0 },
+    { q: " All trafic to go from VPN gateway to VNet via VM ", a: " Address prefix - VNet<br>Next hop - Virtual appliance (which is VM)<br>Assigned to VPN gateway ", tag: 0 },
+    { q: " Can you create LB without a frontend IP address?<br>Wihtout backend pool?<br>Without the health probe? ", a: " No<br>Yes<br>Yes ", tag: 0 },
+    { q: " Which DNS server is used? ", a: " Either the Default (Azure-provided) or customly specified ", tag: 0 },
+    { q: " Are all connections between VMs on VLan allowed by default?  ", a: " Yes ", tag: 0 },
+    { q: " Does routing table has precedence before the system routes between subnets? ", a: " Yes. If VM which is next hop in RT is turned off, the connection will not happen ", tag: 0 },
+    { q: " What needs to be used for the web app to connect to on-prem share? ", a: " Azure Virtual Network Gateway ", tag: 0 },
+    { q: " How to properly configure DC in Azure? ", a: " Assign static address of the subnet<br>Create a private Azure DNS zone ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
   ],
@@ -124,9 +132,6 @@ const Questions = {
     { q: " What needs to be used to move DNS zone to a different subsciption? ", a: " Azure PowerShell ", tag: 0 },
     { q: " How to include VM into Application security group? ", a: " Associate NIC to ASG ", tag: 0 },
     { q: " What should be used to validate connectivity in Azure Network Watcher? ", a: " Connection troubleshooting ", tag: 0 },
-    { q: " What is FQDN for the VM in Azure? ", a: " vm#.internal.cloudapp.net ", tag: 0 },
-    { q: " What should be removed if you want to create point-to-site VPN? ", a: " Policy-based VPM gateway ", tag: 0 },
-    { q: " Parameters of Bastion subnet? ", a: " Name - AzureBastionSubnet<br>Address space /27 ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   
