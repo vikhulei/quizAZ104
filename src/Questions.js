@@ -75,7 +75,7 @@ const Questions = {
     
   ],
   
-  Exam_Network: [
+  Exam_Network1: [
     { q: "  What is a service tag? ", a: "A service tag represents a group of IP address prefixes from a given Azure service.  ", tag: 0 },
     { q: "What is private endpoint? ", a: " The private endpoint uses a separate IP address from the VNet address space. Network traffic between the clients on the VNet and the storage account traverses over the VNet and a private link on the Microsoft backbone network, eliminating exposure from the public internet. ", tag: 0 },
     { q: " Which role is required to modify DNS and other network settings? ", a: " Network Contributor ", tag: 0 },
@@ -102,6 +102,8 @@ const Questions = {
     { q: " How many registration zones can VNet have?<br>How many resolution zones can VNet have? ", a: " One<br>Multiple ", tag: 0 },
     { q: " All trafic to go from VPN gateway to VNet via VM ", a: " Address prefix - VNet<br>Next hop - Virtual appliance (which is VM)<br>Assigned to VPN gateway ", tag: 0 },
     { q: " Can you create LB without a frontend IP address?<br>Wihtout backend pool?<br>Without the health probe? ", a: " No<br>Yes<br>Yes ", tag: 0 },
+  ],
+  Exam_Network2: [
     { q: " Which DNS server is used? ", a: " Either the Default (Azure-provided) or customly specified ", tag: 0 },
     { q: " Are all connections between VMs on VLan allowed by default?  ", a: " Yes ", tag: 0 },
     { q: " Does routing table has precedence before the system routes between subnets? ", a: " Yes. If VM which is next hop in RT is turned off, the connection will not happen ", tag: 0 },
@@ -132,6 +134,7 @@ const Questions = {
     { q: " What needs to be used to move DNS zone to a different subsciption? ", a: " Azure PowerShell ", tag: 0 },
     { q: " How to include VM into Application security group? ", a: " Associate NIC to ASG ", tag: 0 },
     { q: " What should be used to validate connectivity in Azure Network Watcher? ", a: " Connection troubleshooting ", tag: 0 },
+    { q: " What can be protected with Azure Bastion? ", a: " Only VM ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   

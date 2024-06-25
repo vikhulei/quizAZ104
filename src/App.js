@@ -56,7 +56,8 @@ const App = () => {
           <option value='Exam_Entra_Blobs_VMs_Container'>Exam_Entra_Blobs_VMs_Container</option>
           <option value='Exam_Storage'>Exam_Storage</option>
           <option value='Exam_Monitoring'>Exam_Monitoring</option>
-          <option value='Exam_Network'>Exam_Network</option>
+          <option value='Exam_Network1'>Exam_Network1</option>
+          <option value='Exam_Network2'>Exam_Network2</option>
           <option value='Miscellanious'>Miscellanious</option>
           <option value='EntraID'>Entra ID</option>
           <option value='UsersAndGroups'>Users & Groups</option>
