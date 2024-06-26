@@ -22,6 +22,8 @@ const Questions = {
     //applications
     {q: " What is scale up for Applications? ", a: " More CPU, disk space, memory, dedicated VMs, custome domains, staging slots etc. ", tag: 0},
     { q: " What should be first created before doing a backup for the app?  ", a: " Azure Storage Account ", tag: 0 },
+    { q: " Which tool should be used to monitor apps performance? ", a: " Application Insights Agent ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
     
     //VMs & containers
     { q: " Which storage services support conditions when assigning roles ", a: " Containers ", tag: 0 },
@@ -149,6 +151,8 @@ const Questions = {
     { q: " In which order we need to deploy resources? ", a: " VNet -> NIC -> VM -> Azure moitor extension ", tag: 0 },
     { q: " What are two first steps to migrate 50 VMs from VMWare vSphere? ", a: " 1) Create a Recovery Services vault<br>2) Configure a virtual network ", tag: 0 },
     { q: " What kind of IP is needed for Bastion to support host scaling? ", a: " Standard sku with a static allocation ", tag: 0 },
+    { q: " What is not ovewritten when you restore VM from backup? ", a: " Size and admin passowords.<br>Added disks and any changes in folder structure are ", tag: 0 },
+    { q: " Can User admin reset MFA questions? ", a: " No, only Global Admin can ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   
