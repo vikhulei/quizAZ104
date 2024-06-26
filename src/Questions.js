@@ -24,6 +24,7 @@ const Questions = {
     { q: " What should be first created before doing a backup for the app?  ", a: " Azure Storage Account ", tag: 0 },
     { q: " Which tool should be used to monitor apps performance? ", a: " Application Insights Agent ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
     
     //VMs & containers
     { q: " Which storage services support conditions when assigning roles ", a: " Containers ", tag: 0 },
@@ -42,7 +43,7 @@ const Questions = {
     { q: " What should be changed in the Network section for AKS to suppord Windows Server containers? ", a: " Network policy - Azure CNI ", tag: 0 },
     { q: " Which platform can use Azure Container App? ", a: " Linux only ", tag: 0 },
     { q: " What is the minimum number of ip addresses for container apps? ", a: " 512 (/23) ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
+    { q: " How to restore files to on-prem computer from Azure Backup?  ", a: " 1) File Recovery from the vault<br>2) Select restore points with deleted files(br>3) Run the script to mount a drive on the local computer<br>4) Copy files with File Explorer ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   Exam_Storage: [
@@ -76,6 +77,7 @@ const Questions = {
     { q: " Maximum number of alert emails?<br>Maximum number of alert SMS?<br>Maximum number of voice message? ", a: " Emails - 100 in an hour<br>SMS - 1 every 5 min<br>Voice - 1 call every 5 min ", tag: 0 },
     { q: " How many action groups should be created?<br>How many alert rules should be created? ", a: " Groups - as amnhy as there are individual groups of users<br>Rules - as many as there are individual actions ", tag: 0 },
     { q: " Are alerts sent to AD groups? ", a: " No ", tag: 0 },
+    { q: " Which options to use to view event time, event name and afected resources for a service outage? ", a: " AzureActivity level==critical<br>project ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
   ],
@@ -153,6 +155,8 @@ const Questions = {
     { q: " What kind of IP is needed for Bastion to support host scaling? ", a: " Standard sku with a static allocation ", tag: 0 },
     { q: " What is not ovewritten when you restore VM from backup? ", a: " Size and admin passowords.<br>Added disks and any changes in folder structure are ", tag: 0 },
     { q: " Can User admin reset MFA questions? ", a: " No, only Global Admin can ", tag: 0 },
+    { q: " Where to store VM's backuo and whuich object to use? ", a: " Recovery Services Vault<br>Backup policy ", tag: 0 },
+    { q: " Which option to use to recover VM to 8 days ago? ", a: " Restore VM by using the Replace existing restore configuraion option ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   
