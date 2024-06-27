@@ -19,12 +19,15 @@ const Questions = {
     { q: " What can you encrypt with Encryption Scope? ", a: " Containers and blobs ", tag: 0 },
     { q: " Can blobs be backed up to the vaults? ", a: " No ", tag: 0 },
     { q: " Two roles to be able to upload files ", a: " Reader - to view storage account resources<br>Blob Data Contributor - to upload data to the blob ", tag: 0 },
+    { q: " What can be used for storing apps, SQL, database?<br>VM's drives?  ", a: " apps and SQL - Blob storage<br>VMs drives - page Blobs ", tag: 0 },
 
     //applications
     {q: " What is scale up for Applications? ", a: " More CPU, disk space, memory, dedicated VMs, custome domains, staging slots etc. ", tag: 0},
     { q: " What should be first created before doing a backup for the app?  ", a: " Azure Storage Account ", tag: 0 },
     { q: " Which tool should be used to monitor apps performance? ", a: " Application Insights Agent ", tag: 0 },
     { q: " Which accounts can be used for app backup? ", a: " StorageV2, Blob, BlockBlob ", tag: 0 },
+    { q: " How to back up an app? ", a: " By backing up the VMs on which app is located (to Recovery Services Vault) ", tag: 0 },
+    { q: " How do you move blueprint files to Azure? ", a: " Bu using Azure Storage Explorer to copy the files ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
     //VMs & containers
@@ -69,6 +72,8 @@ const Questions = {
     { q: " What can you do with Azure Storage Explorer? ", a: " Append and add any data, create shares, but NOT create storage accounts ", tag: 0 },
     { q: " What is required for doing a backup for VMs, File Share, SQL Server?<br>For doing a backup for Azure Disks, Azure Blobs,PostgreSQL?<br>For App Service backup? ", a: " Recovery Service Vault<br>Backup Vault<br>Storage Account ", tag: 0 },
     { q: " Which mode allows for deleting all resources from the RG before deploying new ones? ", a: " Complete ", tag: 0 },
+    { q: " Which storage kind supports replication?<br>What kind of storage supports retention of logs? ", a: " Storage V2<br>Storage V22 (up to 365 days) ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
     
