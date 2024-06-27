@@ -5,6 +5,7 @@ const Questions = {
     { q: ". Which roles can you clone to create the new roles? ", a: " Built in and subscription roles ", tag: 0 },
     { q: "  Is licensing applied to a nested groups?<br>Is a role applied to a nested group? ", a: "No<br>No", tag: 0 },
     { q: " Who is co-adminstrator? ", a: " Co-administrators have full access to all resources in a SUBSCRIPTION, including the ability to create, read, update, and delete resources. ", tag: 0 },
+    { q: " Which blade is used to designate user as the service admin for subscription? ", a: " Subscription blade - modify Propeerties ", tag: 0 },
 
         //Entra
     { q: " What is required for an external user invitation? ", a: " Email address<br>InviteReirectUrl ", tag: 0 },
@@ -23,7 +24,7 @@ const Questions = {
     {q: " What is scale up for Applications? ", a: " More CPU, disk space, memory, dedicated VMs, custome domains, staging slots etc. ", tag: 0},
     { q: " What should be first created before doing a backup for the app?  ", a: " Azure Storage Account ", tag: 0 },
     { q: " Which tool should be used to monitor apps performance? ", a: " Application Insights Agent ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
+    { q: " Which accounts can be used for app backup? ", a: " StorageV2, Blob, BlockBlob ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
     //VMs & containers
@@ -45,7 +46,7 @@ const Questions = {
     { q: " What is the minimum number of ip addresses for container apps? ", a: " 512 (/23) ", tag: 0 },
     { q: " How to restore files to on-prem computer from Azure Backup?  ", a: " 1) File Recovery from the vault<br>2) Select restore points with deleted files(br>3) Run the script to mount a drive on the local computer<br>4) Copy files with File Explorer ", tag: 0 },
     { q: " How to backup VM Disk? ", a: " Create AZure Backup Vault<br>Create a backup policy<br>Configure manageed identity ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
+    { q: " Do we need to create Vailts for each Region? ", a: " Yes ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   Exam_Storage: [
@@ -80,6 +81,14 @@ const Questions = {
     { q: " How many action groups should be created?<br>How many alert rules should be created? ", a: " Groups - as amnhy as there are individual groups of users<br>Rules - as many as there are individual actions ", tag: 0 },
     { q: " Are alerts sent to AD groups? ", a: " No ", tag: 0 },
     { q: " Which options to use to view event time, event name and afected resources for a service outage? ", a: " AzureActivity level==critical<br>project ", tag: 0 },
+    { q: " If you create disk and attach it to VM, does it trigger alert for the resource group? ", a: " No ", tag: 0 },
+    { q: " Which tool is used to capture all Windows and security events? ", a: " Azure Monitor ", tag: 0 },
+    { q: " What is used to deisplay detailed metrics and visual representation of network topology? ", a: " Azure Monitor Network Insights ", tag: 0 },
+    { q: " What are Out-of_Order Events, Output Events, Late Input Events, Backlogged Input Events? ", a: " Out-of_Order Events - Number of events received out of order<br>Output Events - Amount of data sent to the output target<br>Late Input Events - those arrived late<br>Backlogged Input Events - job can't keeep up with the number ", tag: 0 },
+    { q: " Which tyope of query is used to collect system events that have specific ID? ", a: " XPath ", tag: 0 },
+    { q: " What is to be installed on on-prem DC to identify latency? ", a: " Azure Monitor agent extension ", tag: 0 },
+    { q: " What does IP flow verify do? ", a: " Enables to specify source and destination IP address, ports, protocol and direction ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
   ],
@@ -104,13 +113,12 @@ const Questions = {
     { q: " What needs to be done to VNets to use DNS server on one of the VNets? ", a: " To configure peering ", tag: 0 },
     { q: " Do you need NSG for VM to use it in backend pool? ", a: " Yes, otherwise all traffic is denied and load balancer would not be able to connect to it ", tag: 0 },
     { q: " In which region needs the NIC to be created? ", a: " The same as VLan ", tag: 0 },
-    { q: " What does IP flow verify do? ", a: " Enables to specify source and destination IP address, ports, protocol and direction ", tag: 0 },
     { q: " How to add two VMs from different subnets to a bckend pool? ", a: " Create Standard IP addresses for both of them ", tag: 0 },
-    { q: " Network Watcher features:<br>IP flow verify<br>Connection troubleshoot<br>Connection monitor<br>NSG flow logs<br>packet capture", a: " IP flow verify - specify source and dest IPv4, port, protocol and direction<br>Connection troubleshoot - test connection at a point of time<br>Connection monitor - test connection between 2 ports at regular intervals<br>NSG flow logs -whether traffic was allowed<br>packet capture - track traffic to/from VM ", tag: 0 },
+    { q: " Network Watcher features:<br>IP flow verify<br>Connection troubleshoot<br>Connection monitor<br>NSG flow logs<br>packet capture", a: " IP flow verify - specify source and dest IPv4, port, protocol and direction<br>Connection troubleshoot - test connection at a point of time<br>Connection monitor - test connection between 2 ports at regular intervals<br>NSG flow logs - whether traffic was allowed<br>packet capture - track traffic to/from VM ", tag: 0 },
     { q: " Difference between standard and basicc LB? ", a: " Basic - VMs should be connected to the same availability set<br>Standard - to the same VNet ", tag: 0 },
     { q: " How many registration zones can VNet have?<br>How many resolution zones can VNet have? ", a: " One<br>Multiple ", tag: 0 },
     { q: " All trafic to go from VPN gateway to VNet via VM ", a: " Address prefix - VNet<br>Next hop - Virtual appliance (which is VM)<br>Assigned to VPN gateway ", tag: 0 },
-    { q: " Can you create LB without a frontend IP address?<br>Wihtout backend pool?<br>Without the health probe? ", a: " No<br>Yes<br>Yes ", tag: 0 },
+    { q: " Can you create LB without a frontend IP address?<br>Without backend pool?<br>Without the health probe? ", a: " No<br>Yes<br>Yes ", tag: 0 },
   ],
   Exam_Network2: [
     { q: " Which DNS server is used? ", a: " Either the Default (Azure-provided) or customly specified ", tag: 0 },
@@ -124,6 +132,9 @@ const Questions = {
     { q: " What needs to be moved to a different subscription together with VM? ", a: " All dependent resources ", tag: 0 },
     { q: " Can Bastion work accross different VNets? ", a: " Only if they are peered ", tag: 0 },
     { q: " What needs to be configured for traffic between VNets to traves the Microsoft backbone network? ", a: " Peering ", tag: 0 },
+    { q: " How many service endpoints needed to access several storage accounts? ", a: " one - to connect to Microsoft.Storage service ", tag: 0 },
+    { q: " What is the first step  ", a: "  ", tag: 0 },
+    { q: " What needs to be used to communicate with Azure Monitor only thorugh VNet? ", a: " Azure Monitor Private Link Scope ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
   ],
