@@ -44,6 +44,8 @@ const Questions = {
     { q: " Which platform can use Azure Container App? ", a: " Linux only ", tag: 0 },
     { q: " What is the minimum number of ip addresses for container apps? ", a: " 512 (/23) ", tag: 0 },
     { q: " How to restore files to on-prem computer from Azure Backup?  ", a: " 1) File Recovery from the vault<br>2) Select restore points with deleted files(br>3) Run the script to mount a drive on the local computer<br>4) Copy files with File Explorer ", tag: 0 },
+    { q: " How to backup VM Disk? ", a: " Create AZure Backup Vault<br>Create a backup policy<br>Configure manageed identity ", tag: 0 },
+    { q: "  ", a: "  ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   Exam_Storage: [
@@ -157,6 +159,8 @@ const Questions = {
     { q: " Can User admin reset MFA questions? ", a: " No, only Global Admin can ", tag: 0 },
     { q: " Where to store VM's backuo and whuich object to use? ", a: " Recovery Services Vault<br>Backup policy ", tag: 0 },
     { q: " Which option to use to recover VM to 8 days ago? ", a: " Restore VM by using the Replace existing restore configuraion option ", tag: 0 },
+    { q: " Can VM Contributor manage disk snapshots? ", a: " No ", tag: 0 },
+    { q: " Is Azure portal IP address in the list of Service Tag? ", a: " Yes ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   
