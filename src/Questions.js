@@ -73,7 +73,7 @@ const Questions = {
     { q: " What is required for doing a backup for VMs, File Share, SQL Server?<br>For doing a backup for Azure Disks, Azure Blobs,PostgreSQL?<br>For App Service backup? ", a: " Recovery Service Vault<br>Backup Vault<br>Storage Account ", tag: 0 },
     { q: " Which mode allows for deleting all resources from the RG before deploying new ones? ", a: " Complete ", tag: 0 },
     { q: " Which storage kind supports replication?<br>What kind of storage supports retention of logs? ", a: " Storage V2<br>Storage V22 (up to 365 days) ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
+    { q: " Which storage type supports tiering? ", a: " StorageV2 and BlobStorage ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
     
     
