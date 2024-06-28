@@ -6,6 +6,7 @@ const Questions = {
     { q: "  Is licensing applied to a nested groups?<br>Is a role applied to a nested group? ", a: "No<br>No", tag: 0 },
     { q: " Who is co-adminstrator? ", a: " Co-administrators have full access to all resources in a SUBSCRIPTION, including the ability to create, read, update, and delete resources. ", tag: 0 },
     { q: " Which blade is used to designate user as the service admin for subscription? ", a: " Subscription blade - modify Propeerties ", tag: 0 },
+    { q: "  What is the PS command create a new role, based on say, Reader rolee? ", a: " Get-AzRoleDefinition -Name 'Reader' | ConvertTo-Json ", tag: 0 },
 
         //Entra
     { q: " What is required for an external user invitation? ", a: " Email address<br>InviteReirectUrl ", tag: 0 },
@@ -50,6 +51,7 @@ const Questions = {
     { q: " How to restore files to on-prem computer from Azure Backup?  ", a: " 1) File Recovery from the vault<br>2) Select restore points with deleted files(br>3) Run the script to mount a drive on the local computer<br>4) Copy files with File Explorer ", tag: 0 },
     { q: " How to backup VM Disk? ", a: " Create AZure Backup Vault<br>Create a backup policy<br>Configure manageed identity ", tag: 0 },
     { q: " Do we need to create Vailts for each Region? ", a: " Yes ", tag: 0 },
+    { q: " What needs to be done to add VMs to a Basic Load Balancer?<br>To a Standard Load Balancer? ", a: " For a Basic Load Balancer VMs must be in the same availability set<br>For a Standard Load Balancer - must be in the same VNet ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   Exam_Storage: [
@@ -173,11 +175,12 @@ const Questions = {
     { q: " What kind of IP is needed for Bastion to support host scaling? ", a: " Standard sku with a static allocation ", tag: 0 },
     { q: " What is not ovewritten when you restore VM from backup? ", a: " Size and admin passowords.<br>Added disks and any changes in folder structure are ", tag: 0 },
     { q: " Can User admin reset MFA questions? ", a: " No, only Global Admin can ", tag: 0 },
-    { q: " Where to store VM's backuo and whuich object to use? ", a: " Recovery Services Vault<br>Backup policy ", tag: 0 },
+    { q: " Where to store VM's backuo and which object to use? ", a: " Recovery Services Vault<br>Backup policy ", tag: 0 },
     { q: " Which option to use to recover VM to 8 days ago? ", a: " Restore VM by using the Replace existing restore configuraion option ", tag: 0 },
     { q: " Can VM Contributor manage disk snapshots? ", a: " No ", tag: 0 },
     { q: " Is Azure portal IP address in the list of Service Tag? ", a: " Yes ", tag: 0 },
-    { q: "  ", a: "  ", tag: 0 },
+    { q: " To move all App's tiers to Azure, how many VNets and subnets?  ", a: " One VNet and three subnets ß for each tier ", tag: 0 },
+    { q: "   ", a: "  ", tag: 0 },
   ],
   
   EntraID: [
