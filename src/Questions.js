@@ -52,6 +52,7 @@ const Questions = {
     { q: " How to backup VM Disk? ", a: " Create AZure Backup Vault<br>Create a backup policy<br>Configure manageed identity ", tag: 0 },
     { q: " Do we need to create Vailts for each Region? ", a: " Yes ", tag: 0 },
     { q: " What needs to be done to add VMs to a Basic Load Balancer?<br>To a Standard Load Balancer? ", a: " For a Basic Load Balancer VMs must be in the same availability set<br>For a Standard Load Balancer - must be in the same VNet ", tag: 0 },
+    { q: " What needs to be configured as a listener for internal load balancer? ", a: " Set Session persistance to a floating IP (for request to failover to another VM) ", tag: 0 },
     { q: "  ", a: "  ", tag: 0 },
   ],
   Exam_Storage: [
