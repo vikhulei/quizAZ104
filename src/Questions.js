@@ -3,6 +3,7 @@ const Questions = {
     {q:"Which accounts support lifecycle management?", a:" Block blobs and append blobs in V2<br>Premium block blob<br>Blob Storage account ", tag: 0},
     {q:"Which accounts support replication?", a:"1) Storage V2<br>Premium block blob", tag: 0},
     {q:"Which accounts support retention?", a:"Storage V2", tag: 0},
+    { q: " Network Watcher features:<br>IP flow verify<br>Connection troubleshoot<br>Connection monitor<br>NSG flow logs<br>packet capture", a: " IP flow verify - specify source and dest IPv4, port, protocol and direction<br>Connection troubleshoot - test connection at a point of time<br>Connection monitor - test connection between 2 ports at regular intervals<br>NSG flow logs - whether traffic was allowed<br>packet capture - track traffic to/from VM ", tag: 0 },
     {q:"  ", a:"  ", tag: 0},
   ],
   Exam_Entra_Blobs_VMs_Container: [
