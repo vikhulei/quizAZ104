@@ -1,6 +1,7 @@
 const Questions = {
   Priority: [
     {q:"Which accounts support lifecycle management?", a:" Block blobs and append blobs in V2<br>Premium block blob<br>Blob Storage account ", tag: 0},
+    {q:"Which accounts support replication?", a:"1) Storage V2<br>Premium block blob", tag: 0},
     {q:"  ", a:"  ", tag: 0},
   ],
   Exam_Entra_Blobs_VMs_Container: [
