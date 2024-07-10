@@ -1,4 +1,8 @@
 const Questions = {
+  Priority: [
+    {q:"Which accounts support lifecycle management?", a:" Block blobs and append blobs in V2<br>Premium block blob<br>Blob Storage account ", tag: 0},
+    {q:"  ", a:"  ", tag: 0},
+  ],
   Exam_Entra_Blobs_VMs_Container: [
     //subscriptions - RBAC
     { q: "	Which option can you use to manage governance across multiple Azure subscriptions?	", a: "	Management groups facilitate the hierarchical ordering of Azure resources into collections, at a level of scope above subscriptions	", tag: 0 },
